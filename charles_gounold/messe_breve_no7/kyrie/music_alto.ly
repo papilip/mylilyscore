@@ -19,8 +19,8 @@ do'4.	si8	la4	r
 sol4.	fa8	mi4	fa
 do2	si
 do2.	r4
-r1
-r1
+
+R1*2
 la'2	mi4	do'
 do4.	si8	la4	r
 si4.(	la8)	sold4	sold
@@ -35,10 +35,10 @@ la4.(	sol8)	fad4	do'
 si4.	la8	sol4	la
 sol2	fad
 sol2.	r4
-r1
-r1
-r1
-r1
+
+
+
+R1*4
 mi4.	mi8	mi4	mi
 re4.	re8	do4	la'
 sol2(	fa4.)	fa8

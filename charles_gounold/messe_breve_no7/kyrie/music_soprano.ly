@@ -19,16 +19,16 @@ mi'4.	re8	do4	r
 si4.	la8	sol4	la
 mi2	re2
 do2.	r4
-r1
-r1
+
+R1*2
 do'2	la4	mi'
 mi4.	re8	do4	r
 re4.(	do8)	si4	si
 re4.	do8	si4	si
 mi4	re	do	re
 do4.	do8	si4	r
-r1
-r1
+
+R1*2
 do2	la4	mi'
 mi4.	re8	do4	r
 do4.(	si8)	la4	mi'

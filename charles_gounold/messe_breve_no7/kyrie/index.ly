@@ -25,7 +25,7 @@
 	% Les champs suivants sont centrés
 	%dedication	= "dedication"
 	title		= "Messe brève n°7"
-	subtitle		= "Kyrie"
+	subtitle		= "KYRIE"
 	%subsubtitle	= "subsubtitle"
 	%instrument	= "Instrument"
 
