@@ -2,8 +2,10 @@
 ### mon .gitignore pour le projet “mylilyscore”
 ###
 
-# Suppression des fichiers spécial mac
+# Suppression des fichiers spécial mac et dropbox
 .DS_Store
+.dropbox
+Icon?
 
 # Suppression des fichiers PDF, pas utile dans le dépôt
 *.pdf
