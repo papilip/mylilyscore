@@ -7,6 +7,7 @@
 	}
 	<<
 		\new Voice = "Alto" {
+			\global
 			\musicALTO
 		}
 	>>

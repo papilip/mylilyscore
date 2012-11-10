@@ -27,8 +27,8 @@ Chri -- ste e --
 le -- i -- son, e --
 le -- i -- son, e --
 le -- i -- son,
-
-
+Chri -- ste e --
+le -- i -- son,
 Chri -- ste e --
 le -- i -- son,
 Chri -- ste e --
