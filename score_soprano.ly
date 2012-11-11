@@ -7,6 +7,7 @@
 	}
 	<<
 		\new Voice = "Soprano" {
+			\dynamicUp
 			\global
 			\musicSOPRANO
 		}

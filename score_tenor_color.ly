@@ -10,8 +10,7 @@
 		%\clef "G_8"
 		\clef bass
 		\new Voice = "Tenor" {
-			%\autoBeamOff
-			%\dynamicUp
+			\dynamicUp
 			\global
 			\bgcolor "(rgb-color 1 1 0.7)"
 			\musicTENOR

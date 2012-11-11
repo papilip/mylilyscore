@@ -15,11 +15,11 @@
 
 
 R1*17
-mi4.	re8	do4	r
+mi4.\mf	re8	do4	r
 r2	r4	do
 sol2	fa
 mi2.	r4
-la2	mi4	do'
+la2\f	mi4	do'
 do4.	si8	la4	r4
 mi'2	mi4	mi
 mi4.	mi8	mi4	r
@@ -33,7 +33,7 @@ mi2	mi4	mi
 mi4.	mi8	mi4	si8(	do)
 re4.	re8	re4	mi8(	fad)
 sol4	re	mi	mi
-re2	do
+re2\dim	do
 si2.	r4
 
 
@@ -43,7 +43,7 @@ si2.	r4
 
 
 R1*8
-mi4.	re8	do4	r
+mi4.\mf	re8	do4	r
 r2	r4	do
 sol2	fa
 mi4	do'	do	do
@@ -55,8 +55,8 @@ do4)	do	re,	mi
 fa4	do'	si	la
 sol4	sol	re'	re
 do4	r	r2
-do4.	do8	do4	r
-do4.	do8	do4	do
+do4.\p	do8	do4	r
+do4.\dim	do8	do4	do\pp
 si2.	si4
 do1(
 do4)	r	r2

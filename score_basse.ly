@@ -8,6 +8,7 @@
 	<<
 		\clef bass
 		\new Voice = "Basse" {
+			\dynamicUp
 			\global
 			\musicBASSE
 		}

@@ -9,6 +9,7 @@
 		\clef bass
 		%\clef "G_8"
 		\new Voice = "Tenor" {
+			\dynamicUp
 			\global
 			\musicTENOR
 		}

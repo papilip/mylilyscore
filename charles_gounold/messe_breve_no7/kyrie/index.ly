@@ -4,10 +4,10 @@
 	first-page-number		= #2		% Afin d'avoir la reliure du “bon” côté !
 	print-page-number		= ##f
 
-	binding-offset		= 0.75\cm	% Marge de reliure
+	binding-offset		= 0.25\cm	% Marge de reliure
 	inner-margin		= 1.25\cm	% Marge intérieur
 	outer-margin		= 1.25\cm	% Marge extérieur
-	%two-sided		= ##t
+	two-sided		= ##t
 
 	%oddHeaderMarkup		= ##t
 	%evenHeaderMarkup		= ##t
@@ -53,13 +53,17 @@ global = {
 	\override Score.BarNumber.break-visibility = #'#(#f #t #t)
 	% aligne à gauche de la barre
 	\override Score.BarNumber.self-alignment-X = #LEFT
+	%\override Score.BarNumber.padding = #2.75
 	% mets le numéros de mesure en italique
 	\override Score.BarNumber.font-shape = #'italic
 	\override Score.BarNumber.color = #red
 	% Diminue la taille du numéro
-	%\override Score.BarNumber.font-size = #-4
+	\override Score.BarNumber.font-size = #-4
 	% Mettre un jolie rond entourant les numéros de mesures
 	%\override Score.BarNumber.stencil = #(make-stencil-circler 0.1 0.05 ly:text-interface::print)
+
+	% pas de pointillé derrière les nuances
+	\override DynamicTextSpanner #'style = #'none
 }
 
 

@@ -11,4 +11,5 @@
 		\include "../../../score_tenor_color.ly"
 		\include "../../../score_basse.ly"
 	>>
+	%\midi	{ }
 }
