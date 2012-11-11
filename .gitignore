@@ -7,5 +7,6 @@
 .dropbox
 Icon?
 
-# Suppression des fichiers PDF, pas utile dans le dépôt
+# Suppression des fichiers PDF et MIDI, pas utile dans le dépôt
 *.pdf
+*.midi
