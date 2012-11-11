@@ -8,6 +8,7 @@
 	<<
 		\clef bass
 		\new Voice = "Basse" {
+			\global
 			\musicBASSE
 		}
 	>>

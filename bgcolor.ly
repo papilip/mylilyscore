@@ -24,9 +24,11 @@ bgcolor =
 							(ly:stencil-extent staff Y)
 						)
 					)
-					(set! Y-ext (cons
-						(- (car Y-ext) 2)
-						(+ (cdr Y-ext) 2))
+					(set! Y-ext 
+						(cons
+							(- (car Y-ext) 3)
+							(+ (cdr Y-ext) 3)
+						)
 					)
 					(ly:grob-set-property! grob 'layer -10)
 					(ly:stencil-add

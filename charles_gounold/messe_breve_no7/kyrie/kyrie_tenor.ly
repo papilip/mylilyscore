@@ -8,7 +8,7 @@
 	\new ChoirStaff <<
 		\include "../../../score_soprano.ly"
 		\include "../../../score_alto.ly"
-		%\include "../../../score_tenor.ly"
-		%\include "../../../score_basse.ly"
+		\include "../../../score_tenor_color.ly"
+		\include "../../../score_basse.ly"
 	>>
 }
