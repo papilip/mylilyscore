@@ -4,7 +4,7 @@
 
 Je stocke ici les partitions que je ré-écris à l'aide de [LilyPond](http://lilypond.org/) pour mon usage au sein de notre chorale.
 
-Ces fichiers sont disponibles selon la [licence BSD](http://fr.wikipedia.org/wiki/Licence_BSD), c'est à dire que vous pouvez les utiliser comme bon vous semble pour tous les usages possible. Soyez sympa, si vous les utilisez, dites-le moi et envoyez-moi une carte-postale de chez vous.
+Ces fichiers sont disponibles selon la [WTFPL](http://sam.zoy.org/wtfpl/COPYING) - _Do What The Fuck You Want To Public License_, c'est à dire que vous pouvez les utiliser comme bon vous semble pour tous les usages possible. Soyez sympa, si vous les utilisez, dites-le moi et envoyez-moi une carte-postale de chez vous, je vous donnerai mon adresse par courriel.
 
 Toutes les suggestions et les propositions de modifications sont les bienvenues.
 

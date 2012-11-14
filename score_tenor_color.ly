@@ -1,7 +1,7 @@
 %%%%%%%%%%%%% TENOR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \new Staff = "Tenor"
 	\with {
-		%fontSize			= #taille
+		%fontSize		= #taille
 		instrumentName		= "Ténor"
 		shortInstrumentName	= "T. "
 		\override InstrumentName	#'color = #couleur
@@ -18,6 +18,7 @@
 	>>
 \new Lyrics
 	\lyricsto "Tenor" {
-		%\set fontSize		= #taille
+		%\set fontSize = #taille
+		\override LyricText #'color = #couleur
 		\chantTENOR
 	}

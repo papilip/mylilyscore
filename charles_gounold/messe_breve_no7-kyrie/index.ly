@@ -4,7 +4,7 @@
 \header{
 	% Les champs suivants sont centrés
 	%dedication	= "dedication"
-	title		= "O MAGUM MYSTERIUM"
+	title		= "KYRIE de la messe brève n°7 de Charles GOUNOLD"
 	%subtitle	= ""
 	%subsubtitle	= "subsubtitle"
 	%instrument	= "Instrument"
@@ -14,21 +14,18 @@
 	%meter		= "meter"
 
 	% Les champs suivants sont alignés sur le bord droit
-	%composer	= "César-Alejandro CARRILLO (2000)"
-	composer		= \markup { César-Alejandro CARRILLO \italic {(2000)} }
-	arranger		= ""
+	%composer	= ""
+	%arranger	= "arranger"
 
-	revision		= "0.1"
+	revision	= "0.1"
 	\include "../../tagline.ly"
 }
 
 % permet de remettre la taille à 1 pour le debug de l'écriture, à mettre en commentaire pour la partition finale
-#(define taille	1)
+%#(define taille	1)
 
 global = {
-	% Pas de clé générale, changement en cours de partition
-	%\key solb \major
-	
+	%\key sol \major
 	\time 4/4
 
 	% pas de pointillé derrière les nuances
@@ -48,12 +45,7 @@ chantTENOR	= \lyricmode	{ \include "chant_tenor.ly" }
 chantBASSE	= \lyricmode	{ \include "chant_basse.ly" }
 
 % MUSIC
-musicSOPRANO	= \relative do''	 {
-			\key solb \major
-			\include "music_soprano0.ly" 
-			\key mib \major
-			\include "music_soprano1.ly" 
-		}
+musicSOPRANO	= \relative do'	 { \include "music_soprano.ly" }
 musicALTO	= \relative do'	 { \include "music_alto.ly" }
 musicTENOR	= \relative do'	 { \include "music_tenor.ly" }
 musicBASSE	= \relative do'	 { \include "music_basse.ly" }
