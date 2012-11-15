@@ -31,9 +31,10 @@ global = {
 	
 	\time 4/4
 
-	% pas de pointillé derrière les nuances
-	\override DynamicTextSpanner #'style = #'none
+	% la mise en forme desnuances
+	\include "../../dynamic_text_spanner.ly"
 
+	% l'écriture des numéros de mesures
 	\include "../../score_barnumber.ly"
 }
 
@@ -54,6 +55,11 @@ musicSOPRANO	= \relative do''	 {
 			\key mib \major
 			\include "music_soprano1.ly" 
 		}
-musicALTO	= \relative do'	 { \include "music_alto.ly" }
+musicALTO	= \relative do'	 {
+			\key solb \major
+			\include "music_alto0.ly" 
+			%\key mib \major
+			%\include "music_alto1.ly" 
+		}
 musicTENOR	= \relative do'	 { \include "music_tenor.ly" }
 musicBASSE	= \relative do'	 { \include "music_basse.ly" }

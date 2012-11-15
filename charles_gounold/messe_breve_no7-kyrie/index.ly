@@ -17,7 +17,7 @@
 	%composer	= ""
 	%arranger	= "arranger"
 
-	revision	= "0.1"
+	revision		= "0.2"
 	\include "../../tagline.ly"
 }
 
@@ -28,9 +28,10 @@ global = {
 	%\key sol \major
 	\time 4/4
 
-	% pas de pointillé derrière les nuances
-	\override DynamicTextSpanner #'style = #'none
+	% la mise en forme desnuances
+	\include "../../dynamic_text_spanner.ly"
 
+	% l'écriture des numéros de mesures
 	\include "../../score_barnumber.ly"
 }
 
