@@ -1,6 +1,8 @@
 # mylilyscore
 
-### Introduction et but recherché
+## Introduction
+
+### But recherché
 
 Je stocke ici les partitions que je ré-écris à l'aide de [LilyPond](http://lilypond.org/) pour mon usage au sein de notre chorale.
 
