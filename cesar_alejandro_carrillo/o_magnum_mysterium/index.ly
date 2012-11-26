@@ -44,7 +44,7 @@ global = {
 
 % CHANTS
 chantSOPRANO	= \lyricmode	{ \include "chant_soprano.ly" }
-chantALTO	= \lyricmode	{ \include "chant_alto.ly" }
+chantALTO	= \lyricmode	{ \include "chant_soprano.ly" }
 chantTENOR	= \lyricmode	{ \include "chant_tenor.ly" }
 chantBASSE	= \lyricmode	{ \include "chant_basse.ly" }
 
@@ -55,11 +55,11 @@ musicSOPRANO	= \relative do''	 {
 			\key mib \major
 			\include "music_soprano1.ly" 
 		}
-musicALTO	= \relative do'	 {
+musicALTO	= \relative do''	 {
 			\key solb \major
 			\include "music_alto0.ly" 
-			%\key mib \major
-			%\include "music_alto1.ly" 
+			\key mib \major
+			\include "music_alto1.ly" 
 		}
 musicTENOR	= \relative do'	 { \include "music_tenor.ly" }
 musicBASSE	= \relative do'	 { \include "music_basse.ly" }

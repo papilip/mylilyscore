@@ -6,10 +6,9 @@
 
 \score {
 	\new ChoirStaff <<
-		%\include "../../score_soprano.ly"
-		\include "../../score_alto.ly"
-		%\include "../../score_tenor_color.ly"
-		%\include "../../score_basse.ly"
+		\include "../../score_sopranoa.ly"
+		\include "../../score_sopranob.ly"
+		\include "../../score_alto_color.ly"
 	>>
 	%\midi	{ }
 }
