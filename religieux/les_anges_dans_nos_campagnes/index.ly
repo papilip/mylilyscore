@@ -41,9 +41,14 @@ global = {
 %%%
 
 % CHANTS
-%chantSOPRANOA	= \lyricmode	{ \include "chant_sopranoa.ly" }
-%chantSOPRANOB	= \lyricmode	{ \include "chant_sopranob.ly" }
+chantSOPRANO	= \lyricmode	{  }
+chantALTO	= \lyricmode	{  }
+chantTENOR	= \lyricmode	{  }
+chantBASSE	= \lyricmode	{  }
+%chantSOPRANO	= \lyricmode	{ \include "chant_sopranoa.ly" }
 %chantALTO	= \lyricmode	{ \include "chant_alto.ly" }
+%chantTENOR	= \lyricmode	{ \include "chant_tenor.ly" }
+%chantBASSE	= \lyricmode	{ \include "chant_basse.ly" }
 
 % MUSIC
 musicSOPRANO	= \relative do''	 { \include "music_soprano.ly" }
