@@ -10,7 +10,7 @@ mi8([	red])	mi([	fad])	sol([	mi])
 fad4	sol8([	fad])	mi([	re])
 sol8([	la])	sol([	fad])	sol([	mi])
 la4	la,	la'(
-lad8)	fa	sol4	r
+lad8)	fad	sol4	r
 r8	sol	fad([	mi])	re([	dod])
 si8([	fad'])	mi([	re])	dod([	si])
 la4(	re8[	dod])	si([	la])

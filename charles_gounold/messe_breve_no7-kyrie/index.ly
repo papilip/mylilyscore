@@ -1,3 +1,4 @@
+\version "2.17.6"
 %les information liées à l'entête et au papier
 \include "../../paper.ly"
 
