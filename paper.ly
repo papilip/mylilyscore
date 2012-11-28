@@ -14,7 +14,7 @@
 
 	%last-bottom-spacing	#'basic-distance	= #10
 	markup-system-spacing	#'basic-distance	= #17
-	min-systems-per-page	= #4
+	min-systems-per-page	= minSYSTEMSperPAGE
 	ragged-bottom		= ##t	% Met l'ensemble des portées vers le haut
 	%score-system-spacing	#'basic-distance	= #20
 	system-system-spacing	#'basic-distance	= #15
