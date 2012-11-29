@@ -15,9 +15,16 @@
 			\musicTENOR
 		}
 	>>
-\new Lyrics
-	\lyricsto "Tenor" {
-		%\set fontSize = #taille
+\new Lyrics \lyricsto "Tenor" {
+		\set stanza = #"1. "
+		%\set fontSize			= #taille
 		\override LyricText #'color = #couleur
-		\chantTENOR
+		\chantTENORun
+	}
+\new Lyrics \lyricsto "Tenor" {
+		\set stanza = #"2. "
+		%\set fontSize			= #taille
+		\override LyricText #'color	= #couleur
+		\override LyricText #'font-shape 	= #'italic
+		\chantTENORdeux
 	}

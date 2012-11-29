@@ -1,6 +1,6 @@
 \version "2.17.6"
 %les information liées à l'entête et au papier
-#(define minSYSTEMSperPAGE 2)
+#(define minSYSTEMSperPAGE 3)
 \include "../../all/paper.ly"
 
 \header{
