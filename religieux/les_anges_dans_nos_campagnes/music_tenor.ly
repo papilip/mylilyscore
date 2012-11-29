@@ -2,9 +2,9 @@ sol4\p	fad	mi	re
 re4.	re8	re(	do)	si4\breathe
 re4	re8	re	sol,4	sol8(	la)
 la4	la8(	re)	re4\breathe	mi8	fad
-sol4	fad	mi	re
+sol4(	fad	mi)	re
 re4.	re8	re([	do])	si4\breathe
-si4	la8	la	la([	sol])	sol(	si)
+si4	la8(	la)	la([	sol])	sol(	si)
 si4	la	si	r
 R1*3
 

@@ -4,7 +4,7 @@ si4	si8	la	si4	si8(	re)
 re4.	do8	si4	r
 si4	si	si	si8(	re)
 re4.	do8	si4	sol\breathe
-si4	si8	la8	si4	si8(	re)
+si4	si8(	la8)	si4	si8(	re)
 re4.	do8	si4	r
 re2(	mi8	re	do	si
 do2	re8	do	si	la

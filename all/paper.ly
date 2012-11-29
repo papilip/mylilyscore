@@ -14,14 +14,14 @@
 
 	%last-bottom-spacing	#'basic-distance	= #10
 	markup-system-spacing	#'basic-distance	= #17
-	min-systems-per-page	= minSYSTEMSperPAGE
+	min-systems-per-page	= #minSYSTEMSperPAGE
 	ragged-bottom		= ##t	% Met l'ensemble des portées vers le haut
 	%score-system-spacing	#'basic-distance	= #20
 	system-system-spacing	#'basic-distance	= #15
 	%top-system-spacing	#'basic-distance	= #10	
 }
 
-\include "../../bgcolor.ly"
+\include "../../all/bgcolor.ly"
 
 %La couleur que nous voulons pour mettre en valeur le texte de mon pupitre
 #(define couleur	red)

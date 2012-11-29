@@ -4,7 +4,7 @@ sol4	sol8	sol	sol([	fad])	mi(	re)
 re4	fad	sol	r
 sol4	sol	sol	sol8(	si)
 si4	fad	sol8(	mi)	re4\breathe
-re4	red8	red	red([	mi])	sol(	fad)
+re4	red8(	red)	red([	mi])	sol(	fad)
 mi4	fad	re	r
 r2	sol(\f
 la8	sol	fad	mi	fa2

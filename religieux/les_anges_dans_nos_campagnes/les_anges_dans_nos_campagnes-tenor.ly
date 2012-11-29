@@ -6,10 +6,10 @@
 
 \score {
 	\new ChoirStaff <<
-		\include "../../score_soprano.ly"
-		\include "../../score_contralto.ly"
-		\include "../../score_tenor.ly"
-		\include "../../score_basse.ly"
+		\include "../../all/score_soprano2.ly"
+		\include "../../all/score_contralto2.ly"
+		\include "../../all/score_tenor2.ly"
+		\include "../../all/score_basse2.ly"
 	>>
 	%\midi	{ }
 }
