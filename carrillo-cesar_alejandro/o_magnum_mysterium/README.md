@@ -1,5 +1,5 @@
 # O MAGNUM MYSTERIUM
 
-## de César-Alejandro CARRILLO
+## Chœur mixe “a capella”
 
-Version de travail sur deux pages.
+### de César-Alejandro CARRILLO
