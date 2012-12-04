@@ -55,7 +55,7 @@ chantSOPRANOun	= \lyricmode {	\include "chant_11.ly"
 				\include "chant_13.ly"
 				\include "chant_14.ly"
 				\include "chant_15.ly"
-				\markup{ \rightbrace	Glo }
+				\markup{	\rightbrace	Glo }
 				\include "chant_16.ly"
  			}
 chantSOPRANOdeux	= \lyricmode {	\include "chant_21.ly"
@@ -87,7 +87,7 @@ chantTENORdeux	=  \lyricmode {	\include "chant_21.ly"
 
 chantBASSEun	= \lyricmode {	\include "chant_12.ly"
 				\include "chant_15.ly"
-				\markup{ \rightbrace	Glo }
+				\markup{	\rightbrace	Glo }
 				-- __ ri -- a De -- __ o_!
  			}
 chantBASSEdeux	= \lyricmode {	\include "chant_22.ly"
@@ -95,7 +95,7 @@ chantBASSEdeux	= \lyricmode {	\include "chant_22.ly"
 			}
 
 % MUSIC
-musicSOPRANO	= \relative do''	{\include "music_soprano.ly" }
-musicCONTRALTO	= \relative do''	{\include "music_contralto.ly" }
-musicTENOR	= \relative do'	{\include "music_tenor.ly" }
-musicBASSE	= \relative do	{\include "music_basse.ly" }
+musicSOPRANO	= \relative do''{	\include "music_soprano.ly" }
+musicCONTRALTO	= \relative do''{	\include "music_contralto.ly" }
+musicTENOR	= \relative do' {	\include "music_tenor.ly" }
+musicBASSE	= \relative do  {	\include "music_basse.ly" }
