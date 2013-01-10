@@ -23,7 +23,7 @@
 	%top-system-spacing	#'basic-distance	= #10	
 }
 
-\include "../../all/bgcolor.ly"
+\include "../all/bgcolor.ly"
 
 %La couleur que nous voulons pour mettre en valeur le texte de mon pupitre
 #(define couleur	red)
