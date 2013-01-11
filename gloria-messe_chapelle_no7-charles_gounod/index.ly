@@ -35,6 +35,9 @@ global = {
 
 	% l'écriture des numéros de mesures
 	\include "../all/score_barnumber.ly"
+	
+	% commender à la mesure 63
+	\set Score.currentBarNumber = #63
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -42,10 +45,14 @@ global = {
 %%%
 
 % CHANTS
-chantSOPRANO	= \lyricmode	{ \include "chant.ly" }
-chantALTO	= \lyricmode	{ \include "chant.ly" }
-chantTENOR	= \lyricmode	{ \include "chant.ly" }
-chantBASSE	= \lyricmode	{ \include "chant.ly" }
+chantSOPRANO	= \lyricmode {	\include "chant0.ly"
+				\include "chant1.ly" }
+chantALTO	= \lyricmode {	\include "chant0.ly" 
+				\include "chant1.ly" }
+chantTENOR	= \lyricmode {	\include "chant0.ly" 
+				\include "chant1.ly" }
+chantBASSE	= \lyricmode {	\include "chant0.ly"	bo --	nae,
+				\include "chant1.ly" }
 
 % MUSIC
 musicSOPRANO	= \relative do''	 { \include "music_soprano.ly" }
