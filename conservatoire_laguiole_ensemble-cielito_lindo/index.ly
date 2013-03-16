@@ -19,7 +19,7 @@
 	%composer	= ""
 	%arranger	= "arranger"
 
-	revision		= "0.1"
+	revision		= "0.2"
 	\include "../all/tagline.ly"
 }
 

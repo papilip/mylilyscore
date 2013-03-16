@@ -21,7 +21,6 @@
 
 
 
-
 % l'écriture des numéros de mesures
 \include "../all/score_barnumber.ly"
 
@@ -29,21 +28,22 @@
 \set Score.currentBarNumber = #33
 
 \time 3/4
+\bar "|:"
 \repeat volta 2 {
 	|r2.
-	|r4	<sol-0>2
+	|r4	<sol_0>2
 	|r2.
-	|r4	<sol-0>2
-	|r2.
-	|r2.
+	|r4	<sol_0>2
 	|r2.
 	|r2.
-	|<si-2>4	<si-2>	<si-2>
-	|<si-2>2	<la-12>4
-	|<fa-1>4	<re-13>2
-	|<re-13>4	<mi-12>	<fa-1>
-	|<sol-0>2	<sol-0>4
-	|<fa-1>4	<mi-12>	<re-13>
-	|<do-0>2.(
-	|<do-0>4)	r2
+	|r2.
+	|r2.
+	|<si_2>4	<si_2>	<si_2>
+	|<si_2>2	<la_1_2>4
+	|<fa_1>4	<re_1_3>2
+	|<re_1_3>4	<mi_1_2>	<fa_1>
+	|<sol_0>2	<sol_0>4
+	|<fa_1>4	<mi_1_2>	<re_1_3>
+	|<do_0>2.(
+	|<do_0>4)	r2
 }

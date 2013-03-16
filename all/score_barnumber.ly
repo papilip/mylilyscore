@@ -20,3 +20,12 @@
 
 % Mettre un jolie rond entourant les numéros de mesures
 %\override Score.BarNumber #'stencil	= #(make-stencil-circler 0.1 0.05 ly:text-interface::print)
+
+
+
+% Gestion du doigté
+%\override Score.Fingering #'font-shape	= #'italic
+\override Score.Fingering #'color		= #blue
+
+% Diminue la taille du numéro
+\override Score.Fingering #'font-size	= #-7
