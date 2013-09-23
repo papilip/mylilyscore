@@ -24,7 +24,7 @@
 % l'écriture des numéros de mesures
 \include "../all/score_barnumber.ly"
 
-% commender à la mesure 33
+% commencer à la mesure 33
 \set Score.currentBarNumber = #33
 
 \time 4/4
