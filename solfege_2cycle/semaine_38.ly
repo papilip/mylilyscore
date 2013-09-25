@@ -7,7 +7,7 @@
 \header{
   % Les champs suivants sont centrés
   %dedication = "dedication"
-  title   = "Semaine 38"
+  title	= "Semaine 38"
   %subtitle = ""
   %subsubtitle  = "subsubtitle"
   %instrument = "Partie pour trompette en ut"
@@ -18,27 +18,30 @@
 
   % Les champs suivants sont alignés sur le bord droit
   %composer = ""
-  %arranger = "arranger"
+  %arranger = "arranger"  
 
-  revision    = "0.0"
+  revision    = "1.19"
   \include "../all/tagline.ly"
 }
 
 % permet de remettre la taille à 1 pour le debug de l'écriture, à mettre en commentaire pour la partition finale
 %#(define taille 1)
+% la taille des portées
+#(define staffsize 19)
 
 musicA  = \relative do'    { \include "semaine_38-music_a.ly" }
 musicB  = \relative do''   { \include "semaine_38-music_b.ly" }
 musicC  = \relative do''   { \include "semaine_38-music_c.ly" }
 
 \score {
-        \musicA
+	\musicA
+	\layout { #(layout-set-staff-size staffsize) }
 }
 \score {
-        \musicB
+	\musicB
+	\layout { #(layout-set-staff-size staffsize) }
 }
 \score {
-	\new RhythmicStaff {
-		\musicC
-	}
+	\new RhythmicStaff { \musicC }
+	\layout { #(layout-set-staff-size staffsize) }
 }
