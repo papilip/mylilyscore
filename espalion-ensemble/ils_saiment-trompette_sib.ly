@@ -1,35 +1,8 @@
-\version "2.17.26"
-%les information liées à l'entête et au papier
-#(define	minSYSTEMSperPAGE	1)
-% permet de remettre la taille à 1 pour le debug de l'écriture, à mettre en commentaire pour la partition finale
-#(define taille	1)
-% la taille des portées
-% #(define staffsize 20)
-staffSIZE	= 20
+setPOET		= "Pour trompette en SIb"
+setREVISION	= "0.1"
 
-\include "../all/solfege.ly"
+\include "ils_saiment-index.ly"
 
-\header{
-	% Les champs suivants sont centrés
-	%dedication	= "dedication"
-	title		= "Ils s’aiment"
-	%subtitle	= ""
-	%subsubtitle	= "subsubtitle"
-	% instrument	= "Partie pour trompette en sib"
-
-	% Les champs suivants sont alignés sur le bord gauche
-	poet		= "Pour trompette en SIb"
-	%meter		= "meter"
-
-	% Les champs suivants sont alignés sur le bord droit
-	%composer	= ""
-	%arranger	= "arranger"
-
-	revision	= "0.1"
-	\include "../all/tagline.ly"
-}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 setKEY		= sol
 setMM		= \major
 setBAR		= "||"
@@ -89,7 +62,7 @@ musicF	= \relative do'' {
 }
 titrePORTEE	= \markup { \box F }
 musicALL 	= \musicF
-\score {	\include "../all/score_music.ly" }
+\score {			  \include "../all/score_music.ly" }
 
 titrePORTEE	= \markup 	{ \box G }
 barNUMBER	= 64
@@ -115,7 +88,7 @@ musicH	= \relative do'' {
 }
 titrePORTEE	= \markup { \box H }
 musicALL 	= \musicH
-\score {	\include "../all/score_music.ly" }
+\score {			  \include "../all/score_music.ly" }
 
 titrePORTEE	= \markup 	{ \box I }
 barNUMBER	= 80
