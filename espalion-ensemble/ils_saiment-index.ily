@@ -19,11 +19,11 @@ staffSIZE	= 20
 
 	% Les champs suivants sont alignés sur le bord gauche
 	poet		= \setPOET
-	%meter		= "meter"
+	% meter		= "2013"
 
 	% Les champs suivants sont alignés sur le bord droit
-	%composer	= ""
-	%arranger	= "arranger"
+	composer	= "Ensemble musical d’Éspalion — 2013"
+	arranger	= "Arrangements de Frédéric Bonnet"
 
 	revision	= \setREVISION
 	\include "../all/tagline.ly"
