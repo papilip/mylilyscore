@@ -1,10 +1,10 @@
+\version "2.17.26"
+
 % l'écriture des numéros de mesures
 \include "../all/score_barnumber.ly"
 \time 3/4
 \tempo "Très lent" 4=52 
 \key fa \major
-
-
 
 
 

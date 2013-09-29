@@ -1,10 +1,10 @@
+\version "2.17.26"
+
 % l'écriture des numéros de mesures
 \include "../all/score_barnumber.ly"
 \time 4/4
 \tempo "Très vite" 4=132 
 \key sol \major
-
-
 
 
 
