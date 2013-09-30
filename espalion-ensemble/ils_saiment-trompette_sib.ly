@@ -1,9 +1,9 @@
 \version "2.17.26"
 
-setPOET		= "Pour trompette en SIb"
+setPOET		= "Pour trompettes en SIb"
 setREVISION	= "0.1"
 
-\include "ils_saiment-index.ily"
+\include "ils_saiment-header.ily"
 
 
 musicFH 	= { 

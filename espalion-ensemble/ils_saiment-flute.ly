@@ -3,7 +3,7 @@
 setPOET		= "Pour flûtes"
 setREVISION	= "0.2"
 
-\include "ils_saiment-index.ily"
+\include "ils_saiment-header.ily"
 
 
 musicFH 	= \relative do'''	{ 
