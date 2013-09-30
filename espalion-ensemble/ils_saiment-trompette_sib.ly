@@ -5,54 +5,9 @@ setREVISION	= "0.1"
 
 \include "ils_saiment-index.ily"
 
-setKEY		= sol
-setMM		= \major
-setBAR		= "||"
-setTIME		= 4/4
 
-titrePORTEE	= \markup 	{ \box Intro }
-barNUMBER	= 1
-laMUSIQUE	= { R1*8 }
-musicALL 	= \relative do	{ \include "../all/oneligne_music.ly" }
-\score {			  \include "../all/oneligne_score.ly" }
-
-titrePORTEE	= \markup 	{ \box A }
-barNUMBER	= 9
-laMUSIQUE	= { R1*8 }
-musicALL 	= \relative do	{ \include "../all/oneligne_music.ly" }
-\score {			  \include "../all/oneligne_score.ly" }
-
-titrePORTEE	= \markup 	{ \box B }
-barNUMBER	= 17
-laMUSIQUE	= { R1*8 }
-musicALL 	= \relative do	{ \include "../all/oneligne_music.ly" }
-\score {			  \include "../all/oneligne_score.ly" }
-
-titrePORTEE	= \markup 	{ \box C }
-barNUMBER	= 25
-laMUSIQUE	= { R1*12 }
-musicALL 	= \relative do	{ \include "../all/oneligne_music.ly" }
-\score {			  \include "../all/oneligne_score.ly" }
-
-titrePORTEE	= \markup 	{ \box D }
-barNUMBER	= 37
-laMUSIQUE	= { R1*10 }
-musicALL 	= \relative do	{ \include "../all/oneligne_music.ly" }
-\score {			  \include "../all/oneligne_score.ly" }
-
-titrePORTEE	= \markup 	{ \box E }
-barNUMBER	= 47
-laMUSIQUE	= { R1*10 }
-musicALL 	= \relative do	{ \include "../all/oneligne_music.ly" }
-\score {			  \include "../all/oneligne_score.ly" }
-
-musicF	= \relative do'' {
-	\include "../all/score_barnumber.ly"
-	\set Score.currentBarNumber = 57
-	\key	\setKEY	\setMM
-	\time	\setTIME
-	\bar 	""
-	si1~
+musicFH 	= { 
+	% si1~
 	|si4\breathe	la	do(	si
 	|la1)
 	|r4	sol(	si	la)
@@ -60,47 +15,29 @@ musicF	= \relative do'' {
 	|sol4	fad(	la	sol)
 	|fad1~
 	|fad1
-	\bar	\setBAR
 }
-titrePORTEE	= \markup { \box F }
-musicALL 	= \musicF
-\score {			  \include "../all/score_music.ly" }
 
-titrePORTEE	= \markup 	{ \box G }
-barNUMBER	= 64
-laMUSIQUE	= { R1*8 }
-musicALL 	= \relative do	{ \include "../all/oneligne_music.ly" }
-\score {			  \include "../all/oneligne_score.ly" }
-
-musicH	= \relative do'' {
+musicALL 	= \relative do''	{ 
 	\include "../all/score_barnumber.ly"
-	\set Score.currentBarNumber = 72
-	\key	\setKEY	\setMM
-	\time	\setTIME
-	\bar 	""
-	si1~
-	|si4\breathe	la	do(	si
-	|la1)
-	|r4	sol(	si	la)
-	|sol1~
-	|sol4	fad(	la	sol)
-	|fad1~
-	|fad1
-	\bar "||"
+	\key	sol \major
+	\time	4/4
+
+	R1*8^\markup	{ \box Intro }	\bar "||"
+	R1*8^\markup	{ \box A }	\bar "||"
+	R1*8^\markup	{ \box B }	\bar "||"
+	R1*12^\markup	{ \box C }	\bar "||"
+	R1*10^\markup	{ \box D }	\bar "||"
+	R1*10^\markup	{ \box E }	\bar "||"
+	\break
+	si1~^\markup	{ \with-color #blue \box F }
+	\musicFH			\bar "||"
+	R1*8^\markup	{ \box G }	\bar "||"
+	si1~^\markup	{ \with-color #blue \box H }
+	\musicFH			\bar "||"
+	R1*8^\markup	{ \box I }	\bar "||"
+	\break
+	R1*8^\markup	{ \box Final }	\bar "|."
 }
-titrePORTEE	= \markup { \box H }
-musicALL 	= \musicH
-\score {			  \include "../all/score_music.ly" }
 
-titrePORTEE	= \markup 	{ \box I }
-barNUMBER	= 80
-laMUSIQUE	= { R1*6 }
-musicALL 	= \relative do	{ \include "../all/oneligne_music.ly" }
-\score {			  \include "../all/oneligne_score.ly" }
-
-titrePORTEE	= \markup 	{ \box Final }
-barNUMBER	= 86
-laMUSIQUE	= { R1*8 }
-setBAR		= "|."
-musicALL 	= \relative do	{ \include "../all/oneligne_music.ly" }
-\score {			  \include "../all/oneligne_score.ly" }
+\new Staff
+	\musicALL
