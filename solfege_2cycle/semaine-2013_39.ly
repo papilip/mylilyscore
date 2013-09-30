@@ -1,8 +1,5 @@
 \version "2.17.26"
-
-%les information liées à l'entête et au papier
-% #(define  minSYSTEMSperPAGE 1)
-\include "../all/solfege.ly"
+\language "italiano"
 
 \header{
 	% Les champs suivants sont centrés
@@ -20,33 +17,34 @@
 	composer	= "Composé par Philippe Vigneulle"
 	arranger	= "Second cycle, première année"  
 
-	revision	= "0.0"
+	revision	= "0.1"
 	\include "../all/tagline.ly"
 }
 
-% permet de remettre la taille à 1 pour le debug de l'écriture, à mettre en commentaire pour la partition finale
-%#(define taille 1)
 % la taille des portées
 #(define staffsize 20)
+% l’interligne
+% #(define interligne 1.2)
 
 musicAA	= \relative do'		{ \include "semaine-2013_39-music_aa.ily" }
 musicAB	= \relative do'		{ \include "semaine-2013_39-music_ab.ily" }
 musicB	= \relative do''	{ \include "semaine-2013_39-music_b.ily" }
 % musicC  = \relative do''	{ \include "semaine-2013_39-music_c.ily" }
 
-\score {
-	\new Staff <<
-  		\new Voice	= "firstAA"	{ \voiceOne \musicAA }
-		\new Voice	= "secondAB" 	{ \voiceTwo \musicAB }
-	>>
-}
+\markup { \vspace #2 }
+\new Staff 
+	\with	{ instrumentName	= \markup { \box A } }
+<<
+	\new Voice	= "firstAA"	{ \voiceOne \musicAA }
+	\new Voice	= "secondAB" 	{ \voiceTwo \musicAB }
+>>
 
-\score {
-	\new Staff
+\markup { \vspace #3 }
+\new Staff
 	\with	{ instrumentName		= \markup { \box B } }
 	\musicB
 	\layout { #(layout-set-staff-size	staffsize) }
-}
+
 % \score {
 % 	\new RhythmicStaff
 % 	\with	{ instrumentName		= \markup { \box C } }
