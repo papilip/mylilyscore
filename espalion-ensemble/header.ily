@@ -18,5 +18,12 @@
 	arranger	= "Arrangements de Frédéric Bonnet"
 
 	revision	= \setREVISION
-	\include "../all/tagline-double.ily"
+
+	#(if 	(< setTAGLINEnbl 2)
+		(define setTAGLINE "../all/tagline-simple.ily")
+		(define setTAGLINE "../all/tagline-double.ily")
+	)
+	\include \setTAGLINE
+	% \include "../all/tagline-simple.ily"
+	% \include "../all/tagline-double.ily")
 }

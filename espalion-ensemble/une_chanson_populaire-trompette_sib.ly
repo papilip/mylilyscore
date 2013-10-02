@@ -3,6 +3,7 @@
 setTITLE	= "(Comme) une chanson populaire"
 setPOET		= "Pour trompettes en SIb"
 setREVISION	= "0.1"
+setTAGLINEnbl	= 2
 
 \include "header.ily"
 #(set-global-staff-size 30)
