@@ -4,7 +4,7 @@
 \header{
 	% Les champs suivants sont centrés
 	%dedication	= "dedication"
-	title		= "Ils s’aiment"
+	title		= \setTITLE
 	%subtitle	= ""
 	%subsubtitle	= "subsubtitle"
 	% instrument	= "Partie pour trompette en sib"
@@ -18,5 +18,5 @@
 	arranger	= "Arrangements de Frédéric Bonnet"
 
 	revision	= \setREVISION
-	\include "../all/tagline.ly"
+	\include "../all/tagline-double.ily"
 }

@@ -1,12 +1,17 @@
 \version "2.17.26"
 
+setTITLE	= "Ils s’aiment"
 setPOET		= "Pour trompettes en SIb"
-setREVISION	= "0.1"
+setREVISION	= "0.3"
 
-\include "ils_saiment-header.ily"
+\include "header.ily"
+#(set-global-staff-size 30)
 
 
-musicFH 	= { 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% LA MUSIQUE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+musicFH = { 
 	% si1~
 	|si4\breathe	la	do(	si
 	|la1)
@@ -16,8 +21,7 @@ musicFH 	= {
 	|fad1~
 	|fad1
 }
-
-musicALL 	= \relative do''	{ 
+musicALL= \relative do'' { 
 	\include "../all/score_barnumber.ly"
 	\key	sol \major
 	\time	4/4
@@ -39,5 +43,10 @@ musicALL 	= \relative do''	{
 	R1*8^\markup	{ \box Final }	\bar "|."
 }
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% LA PARTITION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\markup { \vspace #3 }
 \new Staff
 	\musicALL
