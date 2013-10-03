@@ -128,13 +128,15 @@ musicBtwo= \relative do''' {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \markup { \vspace #1 }
 \new Staff
+	\with { instrumentName = \markup { \with-color #red \circle 1 } }
 <<
-	\new Voice	= "musicAone"	{		\musicAone }
-	\new Voice	= "musicAtwo" 	{ \voiceTwo	\musicAtwo }
+	\new Voice	{		\musicAone }
+	\new Voice	{ \voiceTwo	\musicAtwo }
 >>
 % \markup { \vspace #0.5 }
 \new Staff
+	\with { instrumentName = \markup { \with-color #red \circle 2 } }
 <<
-	\new Voice	= "musicBone"	{		\musicBone }
-	\new Voice	= "musicBtwo" 	{ \voiceTwo	\musicBtwo }
+	\new Voice	{		\musicBone }
+	\new Voice	{ \voiceTwo	\musicBtwo }
 >>
