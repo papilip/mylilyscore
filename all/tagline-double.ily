@@ -8,13 +8,13 @@ tagline		=
 			\line	{
 				\small	{
 					Version \simple #revision de la partition gravée
-					\simple #(strftime "le %d/%m/%Y à %H:%M" (localtime (current-time) ) )
+					\simple #(strftime "le %d/%m/%Y à %H:%M" (localtime (current-time)))
 				}
 			}
 			\line	{
 				\small	{
 					par
-					\with-url #"mailto:philippe@nenert.net" { philippe@nenert.net }
+					\with-url #"mailto:philippe@nenert.net" { philippe+lilypond@nenert.net }
 					grâce à
 					\with-url #"http://lilypond.org/"	{ LilyPond.org }
 				}
