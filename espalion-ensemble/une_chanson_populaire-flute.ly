@@ -133,6 +133,7 @@ musicBtwo= \relative do''' {
 	\new Voice	{		\musicAone }
 	\new Voice	{ \voiceTwo	\musicAtwo }
 >>
+
 % \markup { \vspace #0.5 }
 \new Staff
 	\with { instrumentName = \markup { \with-color #red \circle 2 } }
