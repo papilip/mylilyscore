@@ -1,53 +1,105 @@
-\version "2.17.26"
-\language "italiano"
+\version 		"2.17.26"
+\language 		"italiano"
 
-\header{
-	% Les champs suivants sont centrés
-	%dedication	= "dedication"
-	title		= "Semaine 2013 / 39"
-	%subtitle	= ""
-	%subsubtitle 	= "subsubtitle"
-	%instrument	= "Partie pour trompette en ut"
+\include 		"header-local.ily"
+#(define setTITLE	"Semaine 2013 / 39")
+% #(define setTITLE	"Semaine 2013 / 39")
+#(define setREVISION	"2")
+#(define setTAGLINEnbl	1)
 
-	% Les champs suivants sont alignés sur le bord gauche
-	poet		= "Conservatoire de l’Aveyron"
-	meter		= "Antenne d’Éspalion"
+#(define setCOLOR	blue)
+% #(set-global-staff-size 20)
 
-	% Les champs suivants sont alignés sur le bord droit
-	composer	= "Composé par Philippe Vigneulle"
-	arranger	= "Second cycle, première année"  
 
-	revision	= "0.1"
-	\include "../all/tagline.ly"
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+#(define setSUBTITLE	"Lecture clé de SOL")
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bookpart {
+	\include	"../all/header-all.ily"
+	\markup { \vspace #2 }
+	\score {
+		\new Staff 
+			\with { instrumentName = \markup { \with-color \setCOLOR \circle " 1.A " } }
+		<<
+			\new Voice	{ \voiceOne	\relative do'	{ \include "semaine-2013_39-music_1aa.ily" } }
+			\new Voice	{ \voiceTwo	\relative do'	{ \include "semaine-2013_39-music_1ab.ily" } }
+		>>
+	}
+
+	\markup { \vspace #3 }
+	\score {
+		\new Staff
+			\with { instrumentName = \markup { \with-color \setCOLOR \circle " 1.B " } }
+		{
+			\new Voice	{ 		\relative do''	{ \include "semaine-2013_39-music_1b.ily" } }
+		}
+	}
 }
 
-% la taille des portées
-#(define staffsize 20)
-% l’interligne
-% #(define interligne 1.2)
 
-musicAA	= \relative do'		{ \include "semaine-2013_39-music_aa.ily" }
-musicAB	= \relative do'		{ \include "semaine-2013_39-music_ab.ily" }
-musicB	= \relative do''	{ \include "semaine-2013_39-music_b.ily" }
-% musicC  = \relative do''	{ \include "semaine-2013_39-music_c.ily" }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+#(define setSUBTITLE	"Lecture clé de FA")
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bookpart {
+	\include	"../all/header-all.ily"
+	\score {
+		\new PianoStaff
+			\with { instrumentName = \markup { \with-color \setCOLOR \circle " 2.A " } }
+		<<
+			\new Staff = "haut"	{ 	\relative do'	{ \include "semaine-2013_39-music_2a.ily" } }
+			\new Staff = "bas"	{ 	\clef bass s1*31 s4*2 }
+		>>
+	}
+	\score {
+		\new PianoStaff
+			\with { instrumentName = \markup { \with-color \setCOLOR \circle " 2.B " } }
+		<<
+			\new Staff = "haut"	{ 	\relative do	{ \include "semaine-2013_39-music_2b.ily" } }
+			\new Staff = "bas"	{ 	\clef bass s1*31 s4*3 }
+		>>
+	}
+}
 
-\markup { \vspace #2 }
-\new Staff 
-	\with	{ instrumentName	= \markup { \box A } }
-<<
-	\new Voice	= "firstAA"	{ \voiceOne \musicAA }
-	\new Voice	= "secondAB" 	{ \voiceTwo \musicAB }
->>
 
-\markup { \vspace #3 }
-\new Staff
-	\with	{ instrumentName		= \markup { \box B } }
-	\musicB
-	\layout { #(layout-set-staff-size	staffsize) }
-
-% \score {
-% 	\new RhythmicStaff
-% 	\with	{ instrumentName		= \markup { \box C } }
-% 	\musicC
-% 	\layout { #(layout-set-staff-size	staffsize) }
-% }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+#(define setSUBTITLE	"Lecture rythmique")
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bookpart {
+	\include 	"../all/header-all.ily"
+	\markup { \vspace #3 }
+	\score {
+		\new PianoStaff
+			\with { instrumentName = \markup { \with-color \setCOLOR \circle " 3.A " } }
+		<<
+			\new RhythmicStaff	{ \voiceOne	\relative do'	{ \include "semaine-2013_39-music_3ba.ily" } }
+			\new RhythmicStaff	{ \voiceTwo	\relative do'	{ \include "semaine-2013_39-music_3bb.ily" } }
+		>>
+	}
+	\markup { \vspace #3 }
+	\score {
+		\new PianoStaff
+			\with { instrumentName = \markup { \with-color \setCOLOR \circle " 3.B " } }
+		<<
+			\new Voice	{ \relative do'	{ \include "semaine-2013_39-music_3ba.ily" } }
+			\new Voice	{ \relative do'	{ \include "semaine-2013_39-music_3bb.ily" } }
+		>>
+	}
+	\markup { \vspace #3 }
+	\score {
+		\new RhythmicStaff
+			\with { instrumentName = \markup { \with-color \setCOLOR \circle " 3.C " } }
+			\relative do''	{ \include "semaine-2013_39-music_3d.ily" }
+	}
+	\markup { \vspace #3 }
+	\score {
+		\new Staff
+			\with { instrumentName = \markup { \with-color \setCOLOR \circle " 3.D " } }
+			\relative do''	{ \include "semaine-2013_39-music_3d.ily" }
+	}
+	\markup { \vspace #3 }
+	\score {
+		\new Staff
+			\with { instrumentName = \markup { \with-color \setCOLOR \circle " 3.E " } }
+			\relative do''	{ \include "semaine-2013_39-music_3e.ily" }
+	}
+}
