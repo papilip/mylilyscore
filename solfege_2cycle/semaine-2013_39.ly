@@ -3,7 +3,6 @@
 
 \include 		"header-local.ily"
 #(define setTITLE	"Semaine 2013 / 39")
-% #(define setTITLE	"Semaine 2013 / 39")
 #(define setREVISION	"2")
 #(define setTAGLINEnbl	1)
 
