@@ -23,7 +23,7 @@
 	composer	= \setCOMPOSER
 	arranger	= \setARRANGER
 
-	revision	= \setREVISION
+	% revision	= \setREVISION
 
 	#(if 	(< setTAGLINEnbl 2)
 		(define setTAGLINE "../all/tagline-simple.ily")
