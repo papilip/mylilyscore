@@ -1,17 +1,28 @@
 \version "2.17.26"
+\language 		"italiano"
 
-setTITLE	= "(Comme) une chanson populaire"
-setPOET		= "Pour trompettes en SIb"
-setREVISION	= "0.1"
-setTAGLINEnbl	= 2
+\include 		"header-local.ily"
+#(define setTITLE	"(Comme) une chanson populaire")
+#(define setMETER	"Pour trompettes en SIb")
+#(define setTAGLINEnbl	2)
 
-\include "header.ily"
 #(set-global-staff-size 30)
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% LA PARTITION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\markup { \vspace #1 }
-\new Staff
-	\relative do'' { \include "une_chanson_populaire-trompette_sib-musique.ily" }
+\bookpart {
+	\include	"../all/header-all.ily"
+	% \markup { \vspace #3 }
+	\score {
+		\new Staff
+		{
+			\new Voice	{ 
+				\relative do'' {
+					\include "une_chanson_populaire-trompette_sib-musique.ily"
+				}
+			}
+		}
+	}
+}
