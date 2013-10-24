@@ -13,6 +13,17 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LA MUSIQUE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+musique = \relative do' <<	
+		{ \include "tiblouz-music_a.ily" }
+	\\
+		{ \include "tiblouz-music_b.ily" }
+	>>
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LA PARTITION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \bookpart {
@@ -23,16 +34,10 @@
 			% \with { instrumentName = \markup { \with-color \setCOLOR \circle " 1.A " } }
 		<<
 	                \new Staff
-	                <<
 	                	\clef "G_8"
-	                        \new Voice { 	\relative do' {	\include "tiblouz-music_a.ily" } }
-	                        \new Voice {	\relative do  {	\include "tiblouz-music_b.ily" } }
-	                >>
-	                % \new TabStaff
-	                % <<
-	                %         \relative do' {	\include "tiblouz-music_a.ily" }
-	                %         \relative do  {	\include "tiblouz-music_b.ily" }
-	                % >>
+	                	\musique
+	                \new TabStaff
+	                	\musique
 		>>
 	}
 }

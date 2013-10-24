@@ -8,7 +8,7 @@
 % \tempo "Très lent" 4=52 
 % \key fa \major
 
-la1
+la,1
 |la1
 |re1
 |la1
