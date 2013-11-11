@@ -29,9 +29,7 @@
 	\score {
 		\new Staff
 			\with { instrumentName = \markup { \with-color \setCOLOR \circle " 1.B " } }
-		{
 			\new Voice	{ 		\relative do''	{ \include "semaine-2013_39-music_1b.ily" } }
-		}
 	}
 }
 
