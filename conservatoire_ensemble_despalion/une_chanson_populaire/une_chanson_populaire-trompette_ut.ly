@@ -5,7 +5,7 @@ setPOET		= "Pour trompettes en SIb"
 setREVISION	= "0.1"
 setTAGLINEnbl	= 2
 
-\include "header.ily"
+\include "../header.ily"
 #(set-global-staff-size 30)
 
 
@@ -40,7 +40,7 @@ musicD	= {
 	|R1
 }
 musicALL= \relative do''	{ 
-	\include "../all/score_barnumber.ly"
+	\include "../../all/score_barnumber.ly"
 	\tempo 4 = 86
 	\time	4/4
 
@@ -62,4 +62,4 @@ musicALL= \relative do''	{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \markup { \vspace #1 }
 \new Staff
-	\transpose sib do { \musicALL }
+	\transpose sib do' { \musicALL }
