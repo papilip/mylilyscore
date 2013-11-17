@@ -23,12 +23,12 @@
 		<<
 			\new Staff	{ 
 				\relative do' {
-					\include "music_cledesol.ily"
+					\include "music_main_droite.ily"
 				}
 			}
 			\new Staff	{ 
 				\relative do {
-					\include "music_cledefa.ily"
+					\include "music_main_gauche.ily"
 				}
 			}
 		>>
