@@ -26,8 +26,8 @@
 	% revision	= \setREVISION
 
 	#(if 	(< setTAGLINEnbl 2)
-		(define setTAGLINE "../all/tagline-simple.ily")
-		(define setTAGLINE "../all/tagline-double.ily")
+		(define setTAGLINE "../../all/tagline-simple.ily")
+		(define setTAGLINE "../../all/tagline-double.ily")
 	)
 	\include \setTAGLINE
 }
