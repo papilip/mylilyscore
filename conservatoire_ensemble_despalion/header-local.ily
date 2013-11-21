@@ -17,5 +17,5 @@ setPOET		= "Conservatoire de l’Aveyron"
 setMETER	= "Antenne d’Espalion"
 
 % Les champs suivants sont alignés sur le bord droit
-setCOMPOSER	= "Ensemble musical d’Espalion — 2013"
+setCOMPOSER	= "Ensemble musical d’Espalion - 2013"
 setARRANGER	= "Arrangements de Frédéric Bonnet"
