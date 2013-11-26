@@ -1,0 +1,24 @@
+task :default => [:test]
+
+namespace :thin do
+  desc 'Setup'
+  task :setup do
+    puts 'setup'
+  end
+
+  %w[start stop restart].each do |command|
+    desc "#{command}"
+    task command do
+      puts command
+    end
+  end
+end
+
+namespace :score do
+  %w[trompette piano flute].each do |command|
+    desc "#{command}"
+    task command do
+      puts command
+    end
+  end
+end
