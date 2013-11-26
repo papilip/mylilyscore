@@ -1,17 +1,18 @@
 \version 		"2.17.29"
 \language 		"italiano"
+\relative do' {
 % l'écriture des numéros de mesures
 \include "../../all/score_barnumber.ly"
 \time 4/4
 % \tempo "Très lent" 4=52 
 % \key fa \major
 
-
+% \override TextScript.X-offset = #-5
 
 R1
 |R1									\bar "||"
-|R1^\markup	{ \with-color #blue \box A }
-|R1*12									\bar "||"	\break
+% \once\override TextScript.X-offset = #3
+|R1*13^\markup	{ \with-color #blue \box A }				\bar "||"	\break
 
 la1\mf^\markup	{ \with-color #blue \box B }
 |mi'1
@@ -41,4 +42,4 @@ la1\mf^\markup	{ \with-color #blue \box B }
 |fa4.	fa8	fa4	fa
 |la4	la8	la	sold	sold	sold16	sold	sold	sold	\bar "||"
 |la1^\markup	{ \with-color #blue \box D }				\bar "||"
-|
+|}

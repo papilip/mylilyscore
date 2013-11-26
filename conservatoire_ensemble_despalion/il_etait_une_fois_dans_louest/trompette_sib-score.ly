@@ -16,9 +16,7 @@
 	\include	"../../all/header-all.ily"
 	\markup { \vspace #1 }
 	\score {
-		\new Staff {	\relative do' {
-			\include "trompette_sib-music.ily"			
-			}
+		\new Staff {	\include "trompette_sib-music.ily" }
 		}
 	}
 }
