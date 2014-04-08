@@ -17,6 +17,7 @@
 	\markup { \vspace #1 }
 	\score {
 		\new Staff {	\include "trompette_sib-music.ily" }
-		}
 	}
 }
+
+\midi
