@@ -17,5 +17,5 @@ setPOET		= "Conservatoire de l’Aveyron"
 setMETER	= "Antenne d’Espalion"
 
 % Les champs suivants sont alignés sur le bord droit
-setCOMPOSER	= "Ensemble musical d’Espalion - 2013"
-setARRANGER	= "Arrangements de Frédéric Bonnet"
+setCOMPOSER	= \markup { "Ensemble d’Espalion" \italic "2013/2014" }
+setARRANGER	= \markup { \italic "Arrangements :" "Frédéric Bonnet" }
