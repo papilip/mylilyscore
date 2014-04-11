@@ -7,13 +7,13 @@ barNumberVisibility =
   #(define-music-function (parser location isBarNumberVisibility) (boolean?)
   ; La fonction IF prends trois arguments : le test, la réponse si OUI, la réponse si NON
     (if 
-      ; le test
+      ;le test
       isBarNumberVisibility
-      ; la réponse OUI
+      ;la réponse OUI
       #{ \override Score.BarNumber.break-visibility = ##(#f #t #t) #}
-      ; la réponse NON
+      ;la réponse NON
       #{ \override Score.BarNumber.break-visibility = ##(#f #f #f) #}
-      ; le fait d’encadrer le retour par «#{» et «#}» est pour renvoyer du code lilypond
+      ;le fait d’encadrer le retour par «#{» et «#}» est pour renvoyer du code lilypond
     )
   )
 
