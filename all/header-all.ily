@@ -11,7 +11,7 @@
 	% Les champs suivants sont centrés
 	dedication	= \setDEDICATION
 	title		= \setTITLE
-	subtitle	= \setSUBTITLE
+	subtitle		= \setSUBTITLE
 	subsubtitle	= \setSUBSUBTITLE
 	instrument	= \setINSTRUMENT
 
@@ -20,14 +20,15 @@
 	meter		= \setMETER
 
 	% Les champs suivants sont alignés sur le bord droit
-	composer	= \setCOMPOSER
-	arranger	= \setARRANGER
+	composer		= \setCOMPOSER
+	arranger		= \setARRANGER
 
 	% revision	= \setREVISION
 
-	#(if 	(< setTAGLINEnbl 2)
+	#(if	(< setTAGLINEnbl 2)
 		(define setTAGLINE "../../all/tagline-simple.ily")
 		(define setTAGLINE "../../all/tagline-double.ily")
 	)
 	\include \setTAGLINE
 }
+
