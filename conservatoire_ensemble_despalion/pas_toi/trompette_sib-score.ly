@@ -1,11 +1,12 @@
-\version 		"2.19"
+\version "2.19"
 
+\include		"../../all/script/bar_number_visibility.ily"
 \include 		"../header-local.ily"
-#(define setTITLE		"Pas Toi")
-#(define setMETER		"Trompettes 1 & 2 en SIb")
+#(define setTITLE	"Pas Toi")
+#(define setMETER	"Trompettes 1 & 2 en SIb")
 #(define setTAGLINEnbl	2)
 
-#(set-global-staff-size	35)
+#(set-global-staff-size	33)
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
