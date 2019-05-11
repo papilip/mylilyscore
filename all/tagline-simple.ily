@@ -15,7 +15,7 @@ tagline = \markup {
 		à
 		\bold { \simple #(strftime "%H:%M"	(localtime (current-time))) }
 		par
-		\bold { \with-url #"mailto:philippe+lilypond@nenert.net" { philippe+lilypond@nenert.net } }
+		\bold { \with-url #"mailto:me+lilypond@papilip.me" { Philippe Nénert Dervillez } }
 		grâce à
 		\bold { \with-url #"http://lilypond.org/" { LilyPond.org } }
 	}

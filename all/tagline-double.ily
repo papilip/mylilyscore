@@ -1,6 +1,6 @@
 \version "2.17.26"
 
-% Version NN de la partition gravée le 01/01/2013 à 10:02 
+% Version NN de la partition gravée le 01/01/2013 à 10:02
 % par philippe@nenert.net grâce à LilyPond.org
 tagline = \markup {
 	\center-column {
@@ -29,7 +29,7 @@ tagline = \markup {
 		\line	{
 			\small	{
 				par
-				\bold { \with-url #"mailto:philippe+lilypond@nenert.net" { philippe+lilypond@nenert.net } }
+				\bold { \with-url #"mailto:me+lilypond@papilip.me" { Philippe Nenert Dervillez } }
 				grâce à
 				\bold { \with-url #"http://lilypond.org/" { LilyPond.org } }
 			}

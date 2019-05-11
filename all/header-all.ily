@@ -10,7 +10,7 @@
 \header{
 	% Les champs suivants sont centrés
 	dedication	= \setDEDICATION
-	title		= \setTITLE
+	title				= \setTITLE
 	subtitle		= \setSUBTITLE
 	subsubtitle	= \setSUBSUBTITLE
 	instrument	= \setINSTRUMENT

@@ -24,7 +24,8 @@
 % Mettre un jolie rond entourant les numéros de mesures
 %\override Score.BarNumber #'stencil	= #(make-stencil-circler 0.1 0.05 ly:text-interface::print)
 
-
+% Ajoute un numéro de version pour les mesures alternatives
+\set Score.alternativeNumberingStyle = #'numbers-with-letters
 
 % Gestion du doigté
 %\override Score.Fingering #'font-shape	= #'italic
