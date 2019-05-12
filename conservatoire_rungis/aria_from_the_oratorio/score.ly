@@ -33,7 +33,7 @@ musique = \relative do'' <<
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \bookpart {
   \include  "../../all/header-all.ily"
-  \markup { \vspace #2 }
+  \markup { \vspace #1 }
   \score {
     \new Staff <<
       \clef "treble"
