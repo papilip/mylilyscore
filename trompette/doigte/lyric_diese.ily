@@ -1,31 +1,31 @@
-"fa#"
-sol
-"sol#"
-la
-"la#"
-si
+\markup { ♯fa   \fontsize #-5 \italic ⓵⓶⓷ }
+\markup { sol   \fontsize #-5 \italic ⓵⓷ }
+\markup { ♯sol  \fontsize #-5 \italic ⓶⓷ }
+\markup { la    \fontsize #-5 \italic ⓵⓶ }
+\markup { ♯la   \fontsize #-5 \italic ⓵ }
+\markup { si    \fontsize #-5 \italic ⓶ }
 do
-"do#"
-re
-"re#"
-mi
-fa
-"fa#"
+\markup { ♯do   \fontsize #-5 \italic ⓵⓶⓷ }
+\markup { re    \fontsize #-5 \italic ⓵⓷ }
+\markup { ♯re   \fontsize #-5 \italic ⓶⓷ }
+\markup { mi    \fontsize #-5 \italic ⓵⓶ }
+\markup { fa    \fontsize #-5 \italic ⓵ }
+\markup { ♯fa   \fontsize #-5 \italic ⓶ }
 sol
-"sol#"
-la
-"la#"
-si
+\markup { ♯sol  \fontsize #-5 \italic ⓶⓷ }
+\markup { la    \fontsize #-5 \italic ⓵⓶ }
+\markup { ♯la   \fontsize #-5 \italic ⓵ }
+\markup { si    \fontsize #-5 \italic ⓶ }
 do
-"do#"
-re
-"re#"
+\markup { ♯do   \fontsize #-5 \italic ⓵⓶ }
+\markup { re    \fontsize #-5 \italic ⓵ }
+\markup { ♯re   \fontsize #-5 \italic ⓶ }
 mi
-fa
-"fa#"
+\markup { fa    \fontsize #-5 \italic ⓵ }
+\markup { ♯fa   \fontsize #-5 \italic ⓶ }
 sol
-"sol#"
-la
-"la#"
-si
+\markup { ♯sol  \fontsize #-5 \italic ⓶⓷ }
+\markup { la    \fontsize #-5 \italic ⓵⓶ }
+\markup { ♯la   \fontsize #-5 \italic ⓵ }
+\markup { si    \fontsize #-5 \italic ⓶ }
 do
