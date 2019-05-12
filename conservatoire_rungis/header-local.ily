@@ -2,6 +2,7 @@
 %%% header-local.ily
 %%% Fichier à utiliser avant l’importation du fichier ../all/header-all.ily
 %%%
+\language "italiano"
 
 % Les champs suivants sont centrés
 setDEDICATION   = ""

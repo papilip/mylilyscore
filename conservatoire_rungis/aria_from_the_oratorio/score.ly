@@ -4,24 +4,24 @@
 setTAGLINEnbl = 1
 
 \include    "../header-local.ily"
-setTITLE    = "Walz from the operetta"
-setSUBTITLE = "Extrait de “La grande Duchesse de Gérolstein”"
-setCOMPOSER = "Jacques Offenbach"
-setARRANGER = "(1819-1880)"
+setTITLE    = "Aria from the oratorio"
+setSUBTITLE = "Extrait de “L’enfance du Christ” op. 25"
+setCOMPOSER = "Hector Berlioz"
+setARRANGER = "(1803-1869)"
 
 %#(define setREVISION    "0")
-%#(define setCOLOR       blue)
 #(set-global-staff-size 27)
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LA MUSIQUE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-musique = \relative c' <<
+musique = \relative do'' <<
     {
       % l'écriture des numéros de mesures
       \include "../../all/score_barnumber.ly"
+      % Augmentation de l’espace des mesures
+      \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/30)
       \time 3/4
       \include "music.ily"
     }
@@ -37,7 +37,6 @@ musique = \relative c' <<
   \score {
     \new Staff <<
       \clef "treble"
-      \key g \major
       \musique
     >>
   }

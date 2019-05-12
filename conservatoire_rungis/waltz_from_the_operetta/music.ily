@@ -45,4 +45,4 @@
 | b4-> r r
 | b4-> r r
 | b2.->\fermata
-\bar "|."
+| \bar "|."
