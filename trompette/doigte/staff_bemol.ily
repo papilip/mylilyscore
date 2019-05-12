@@ -1,0 +1,9 @@
+solb1
+sol
+lab
+la
+sib
+si
+do
+reb
+re
