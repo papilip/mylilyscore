@@ -2,9 +2,6 @@
 \language "italiano"
 #(ly:set-option 'relative-includes #t)
 
-% utilisation de la tag line numéro 1
-setTAGLINEnbl = 2
-
 % Les champs suivants sont centrés
 my_dedication   = ""
 my_title        = ""
@@ -14,7 +11,7 @@ my_instrument   = ""
 
 % Les champs suivants sont alignés sur le bord gauche
 my_poet         = ""
-my-meter        = ""
+my_meter        = ""
 
 % Les champs suivants sont alignés sur le bord droit
 my_composer     = ""

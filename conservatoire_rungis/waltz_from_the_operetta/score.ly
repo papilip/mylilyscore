@@ -1,44 +1,66 @@
 \version  "2.19.83"
+#(ly:set-option 'relative-includes #t)
 
-% utilisation de la tag line numéro 1
-setTAGLINEnbl = 1
+% Les champs suivants sont centrés
+my_dedication   = ""
+my_title        = ""
+my_subtitle     = "Walz from the operetta"
+my_subsubtitle  = "Extrait de “La grande Duchesse de Gérolstein”"
+my_instrument   = ""
 
-\include    "../header-local.ily"
-setTITLE    = "Walz from the operetta"
-setSUBTITLE = "Extrait de “La grande Duchesse de Gérolstein”"
-setCOMPOSER = "Jacques Offenbach"
-setARRANGER = "(1819-1880)"
+% Les champs suivants sont alignés sur le bord gauche
+my_poet         = ""
+my_meter        = ""
 
-%#(define setREVISION    "0")
-%#(define setCOLOR       blue)
-#(set-global-staff-size 27)
+% Les champs suivants sont alignés sur le bord droit
+my_composer     = "Jacques Offenbach"
+my_arranger     = "(1819-1880)"
+
+\include "../header_local.ily"
+#(set-global-staff-size 22)
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LA MUSIQUE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-musique = \relative c' <<
-    {
-      % l'écriture des numéros de mesures
-      \include "../../all/score_barnumber.ly"
-      \time 3/4
-      \include "music.ily"
-    }
-  >>
+music = \relative do' {
+  % l'écriture des numéros de mesures
+  \include "../../all/score_barnumber.ly"
+  % Augmentation de l’espace des mesures
+  \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/30)
+  \time 3/4
+  \include "music.ily"
+}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LA PARTITION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\bookpart {
-  \include  "../../all/header-all.ily"
-  \markup { \vspace #2 }
-  \score {
-    \new Staff <<
-      \clef "treble"
-      \key g \major
-      \musique
-    >>
+\book {
+  \paper {
+    print-page-number = ##t
+    print-first-page-number = ##t
+    tagline           = ##f
+    oddHeaderMarkup   = \markup \null
+    evenHeaderMarkup  = \markup \null
+    oddFooterMarkup   = \include  "../../all/tagline_simple.ily"
+    evenFooterMarkup  = \oddFooterMarkup
+  }
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%% Page 1
+  \bookpart {
+    \header {
+      \include  "../../all/header_all.ily"
+    }
+    \markup { \vspace #1 }
+    \score {
+      \new Staff {
+        \new Voice {
+          \clef "treble"
+          \key sol \major
+          \music
+        }
+      }
+    }
   }
 }

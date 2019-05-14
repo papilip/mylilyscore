@@ -12,7 +12,7 @@ instrument	= \my_instrument
 
 % Les champs suivants sont alignés sur le bord gauche
 poet				= \my_poet
-meter				= \my-meter
+meter				= \my_meter
 
 % Les champs suivants sont alignés sur le bord droit
 composer		= \my_composer

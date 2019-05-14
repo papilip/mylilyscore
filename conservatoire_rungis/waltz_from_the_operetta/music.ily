@@ -1,48 +1,48 @@
-\version "2.19.83"  b2->\f b4->
-| b4-> r b-.\mf
-\repeat volta 2 { | b2-. b4-.
-  | b2-. b4-.
-  | c4-. c-. c-.
-  | c4-. r fis-.
-  | fis2-. fis4-.
-  | fis2-. fis4-. }
-\alternative {  { | a4-. g-. g-. | g4-. r g-. }
-                { | a4-. g-. g-. | g4-. r r-. } }
-| a4 a\cresc a
-| a4 a a
-| a4 a a
-| g4 b b
-| a4\f a a
-| g4 g g
-| fis4-> a-> a->
-| a4-> r b,-.\p
-| c4-. c-. c-.
-| c4-. c-. c-.
-| b4-. b-.\< b-.
-| b4-. b-. b-.
-| c4-.\mf c-. c-.
-| fis4-. fis-.\> fis-.
-| g4-. g-. g-.\!
-| g4-. r b,-.
-| c4\cresc c c
-| c4 c c
-| b4 b b
-| bes4  bes bes
-| b4\f b b
-| c4 c fis
-| g4-> g-> g->
-| g4-> r b,-.
-\repeat volta 2 { | b2-. b4-.
-  | b2-. b4-.
-  | c4-. c-. c-.
-  | c4-. r fis-.
-  | fis2-. fis4-.
-  | fis2-. fis4-. }
-\alternative {  { | a4-. g-. g-. | g4-. r g-. }
-                { | g4\cresc b c | b4 b a } }
-| b4 b c
-| b4 b a\!
-| b4-> r r
-| b4-> r r
-| b2.->\fermata
+\version "2.19.83"
+ si2->\f si4-> | si4-> r si-.\mf
+\repeat volta 2 { | si2-. si4-.
+  | si2-. si4-.
+  | do4-. do-. do-.
+  | do4-. r fad-.
+  | fad2-. fad4-.
+  | fad2-. fad4-. }
+\alternative {  { | la4-. sol-. sol-. | sol4-. r sol-. }
+                { | la4-. sol-. sol-. | sol4-. r r-. } }
+| la4 la\cresc la
+| la4 la la
+| la4 la la
+| sol4 si si
+| la4\f la la
+| sol4 sol sol
+| fad4-> la-> la->
+| la4-> r si,-.\p
+| do4-. do-. do-.
+| do4-. do-. do-.
+| si4-. si-.\< si-.
+| si4-. si-. si-.
+| do4-.\mf do-. do-.
+| fad4-. fad-.\> fad-.
+| sol4-. sol-. sol-.\!
+| sol4-. r si,-.
+| do4\cresc do do
+| do4 do do
+| si4 si si
+| sib4  sib sib
+| si4\f si si
+| do4 do fad
+| sol4-> sol-> sol->
+| sol4-> r si,-.
+\repeat volta 2 { | si2-. si4-.
+  | si2-. si4-.
+  | do4-. do-. do-.
+  | do4-. r fad-.
+  | fad2-. fad4-.
+  | fad2-. fad4-. }
+\alternative {  { | la4-. sol-. sol-. | sol4-. r sol-. }
+                { | sol4\cresc si do | si4 si la } }
+| si4 si do
+| si4 si la\!
+| si4-> r r
+| si4-> r r
+| si2.->\fermata
 | \bar "|."
