@@ -1,5 +1,5 @@
-solb1
-sol
+\version  "2.19.83"
+solb1 | sol
 lab
 la
 sib

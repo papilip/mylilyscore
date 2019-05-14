@@ -52,7 +52,7 @@
 
 | do4(\< si la)\!
 | do4(\> si la)\!
-| la4(-\markup { \italic { rall. } }\< si\! sold)\> %\rallentando
+| la4(-\markup { \fontsize #-3 \italic rall. }\< si\! sold)\> %\rallentando
 | la2 r4\!
 | la2 r4
 | la2.\fermata

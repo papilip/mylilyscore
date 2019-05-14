@@ -1,7 +1,9 @@
 \version  "2.19.83"
+\language "italiano"
+#(ly:set-option 'relative-includes #t)
 
 % utilisation de la tag line numéro 1
-setTAGLINEnbl = 1
+setTAGLINEnbl = 2
 
 \include    "../header-local.ily"
 setTITLE    = "Aria from the oratorio"

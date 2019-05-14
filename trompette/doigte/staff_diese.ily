@@ -1,5 +1,5 @@
-fad1
-sol
+\version  "2.19.83"
+fad1 | sol
 sold
 la
 lad
