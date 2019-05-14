@@ -17,8 +17,8 @@ my_poet         = "Trompette en Ut"
 my_meter        =
   \markup {
     \column {
-      \line { \teeny	{ Conservatoire de Rungis } }
-      \line { \teeny	{ Formation musicale avec Vicente José Luna Pomares } }
+      \raise #3 \line { \teeny	{ Conservatoire de Rungis } }
+      \raise #5 \line { \teeny	{ Formation musicale avec Vicente José Luna Pomares } }
     }
   }
 

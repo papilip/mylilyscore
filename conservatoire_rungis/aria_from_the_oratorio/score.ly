@@ -13,8 +13,8 @@ my_poet         = ""
 my_meter        = ""
 
 % Les champs suivants sont alignés sur le bord droit
-my_composer     = "Hector Berlioz"
-my_arranger     = "(1803-1869)"
+my_composer     = \markup { Hector Berlioz \italic \teeny	{ (1803-1869) } }
+my_arranger     = ""
 
 \include "../header_local.ily"
 #(set-global-staff-size 29)
@@ -52,7 +52,7 @@ music = \relative do'' {
     \header {
       \include  "../../all/header_all.ily"
     }
-    \markup { \vspace #1 }
+    \markup { \vspace #0.5 }
     \score {
       \new Staff {
         \new Voice {

@@ -13,11 +13,11 @@ my_poet         = ""
 my_meter        = ""
 
 % Les champs suivants sont alignés sur le bord droit
-my_composer     = "Jacques Offenbach"
-my_arranger     = "(1819-1880)"
+my_composer     = \markup { Jacques Offenbach \italic \teeny	{ (1819-1880) } }
+my_arranger     = ""
 
 \include "../header_local.ily"
-#(set-global-staff-size 22)
+#(set-global-staff-size 23)
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
