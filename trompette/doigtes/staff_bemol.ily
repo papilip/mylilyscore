@@ -8,7 +8,7 @@ do
 reb
 re
 mib
-mib
+mi
 fa
 solb
 sol
