@@ -24,10 +24,12 @@ my_arranger     = ""
 % LA MUSIQUE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 music = \relative do' {
+  %\override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/30)
   % l'écriture des numéros de mesures
   \include "../../all/score_barnumber.ly"
   % Augmentation de l’espace des mesures
-  %\override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/30)
+  \once \override Score.RehearsalMark.self-alignment-X = #LEFT
+  \mark \markup \bold \italic \teeny "Allegro moderato"
   \time 3/4
   \include "music.ily"
 }

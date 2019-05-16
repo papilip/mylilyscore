@@ -51,7 +51,7 @@ staff_diese = \relative do {
     tagline           = ##f
     oddHeaderMarkup   = \markup \null
     evenHeaderMarkup  = \markup \null
-    oddFooterMarkup   = \include  "../../all/tagline_double_papilip.ily"
+    oddFooterMarkup   = \include  "../../all/tagline_double.ily"
     evenFooterMarkup  = \oddFooterMarkup
   }
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
