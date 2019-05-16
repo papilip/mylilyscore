@@ -17,7 +17,7 @@ my_composer     = \markup { Hector Berlioz \italic \teeny	{ (1803-1869) } }
 my_arranger     = ""
 
 \include "../header_local.ily"
-#(set-global-staff-size 29)
+#(set-global-staff-size 30)
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -27,7 +27,7 @@ music = \relative do'' {
   % l'écriture des numéros de mesures
   \include "../../all/score_barnumber.ly"
   % Augmentation de l’espace des mesures
-  \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/30)
+  \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/20)
   \time 3/4
   \include "music.ily"
 }

@@ -17,7 +17,7 @@ my_composer     = \markup { Jacques Offenbach \italic \teeny	{ (1819-1880) } }
 my_arranger     = ""
 
 \include "../header_local.ily"
-#(set-global-staff-size 23)
+#(set-global-staff-size 30)
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -27,7 +27,7 @@ music = \relative do' {
   % l'écriture des numéros de mesures
   \include "../../all/score_barnumber.ly"
   % Augmentation de l’espace des mesures
-  \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/30)
+  %\override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/30)
   \time 3/4
   \include "music.ily"
 }
