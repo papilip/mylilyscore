@@ -8,12 +8,12 @@
   | fad2-. fad4-. }
 \alternative {  { | la4-. sol-. sol-. | sol4-. r sol-. }
                 { | la4-. sol-. sol-. | sol4-. r r-. } }
-| la4 la\cresc la
-| la4 la la
-| la4 la la
-| sol4 si si
-| la4\f la la
-| sol4 sol sol
+| la4-. la-.\cresc la-.
+| la4-. la-. la-.
+| la4-. la-. la-.
+| sol4-. si-. si-.
+| la4-.\f la-. la-.
+| sol4-. sol-. sol-.
 | fad4-> la-> la->
 | la4-> r si,-.\p
 | do4-. do-. do-.
@@ -24,12 +24,12 @@
 | fad4-. fad-.\> fad-.
 | sol4-. sol-. sol-.\!
 | sol4-. r si,-.
-| do4\cresc do do
-| do4 do do
-| si4 si si
-| sib4  sib sib
-| si4\f si si
-| do4 do fad
+| do4-.\cresc do-. do-.
+| do4-. do-. do-.
+| si4-. si-. si-.
+| sib4-.  sib-. sib-.
+| si!4-.\f si-. si-.
+| do4-. do-. fad-.
 | sol4-> sol-> sol->
 | sol4-> r si,-.
 \repeat volta 2 { | si2-. si4-.

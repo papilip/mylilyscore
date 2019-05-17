@@ -3,7 +3,7 @@
 %%% header-local.ily
 %%% Fichier à utiliser avant l’importation du fichier ../all/header-all.ily
 %%%
-\language "italiano"
+\language "français"
 
 % Les champs suivants sont centrés
 %my_dedication   = ""
