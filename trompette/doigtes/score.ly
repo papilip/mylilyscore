@@ -1,5 +1,5 @@
 \version  "2.19.83"
-\language "italiano"
+\language "français"
 #(ly:set-option 'relative-includes #t)
 
 % Les champs suivants sont centrés
@@ -55,7 +55,7 @@ staff_diese = \relative do {
     evenFooterMarkup  = \oddFooterMarkup
   }
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  %%% Page ! ♭ avec ⓵⓶⓷
+  %%% Page 1 ♭ avec ⓵⓶⓷
   \bookpart {
     \header {
       my_subsubtitle  = "Gamme des ♭ avec ⓵⓶⓷"
