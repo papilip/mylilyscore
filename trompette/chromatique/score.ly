@@ -6,7 +6,7 @@
 my_dedication   = ""
 my_title        = ""
 my_subtitle     = "Doigtés de la trompette"
-my_subsubtitle  = ""
+my_subsubtitle  = "Gamme chromatique ♯ & ♭ avec doigté"
 my_instrument   = ""
 
 % Les champs suivants sont alignés sur le bord gauche
@@ -19,25 +19,19 @@ my_arranger     = ""
 
 #(set-global-staff-size 35)
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LA MUSIQUE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-lyric_doigte_num  = \lyricmode { \include "lyric_doigte_num.ily" }
-lyric_bemol       = \lyricmode { \include "lyric_bemol.ily" }
-lyric_diese       = \lyricmode { \include "lyric_diese.ily" }
+lyric_doigte  = \lyricmode { \include "lyric_doigte.ily" }
+lyric         = \lyricmode { \include "lyric.ily" }
 
-staff_bemol = \relative do' {
+music = \relative do' {
   % Augmentation de l’espace des mesures
   \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/30)
   \time 4/4
-  \include "staff_bemol.ily"
-}
-staff_diese = \relative do {
-  % Augmentation de l’espace des mesures
-  \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/30)
-  \time 4/4
-  \include "staff_diese.ily"
+  \include "music.ily"
 }
 
 
@@ -55,49 +49,22 @@ staff_diese = \relative do {
     evenFooterMarkup  = \oddFooterMarkup
   }
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  %%% Page 1 ♭ avec ⓵⓶⓷
   \bookpart {
     \header {
-      my_subsubtitle  = "Gamme des ♭ avec ⓵⓶⓷"
       \include  "../../all/header_all.ily"
     }
     \score {
       \new Staff {
         \new Voice {
           \clef "treble"
-          \staff_bemol
+          \music
         }
         \addlyrics {
-          %{ \override LyricText.font-size = #-3 %}
-          \lyric_bemol
-        }
-        \addlyrics {
-          \override LyricText.font-size = #-3
-          \lyric_doigte_num
-        }
-      }
-    }
-  }
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  %%% Page 2 ♯ avec ⓵⓶⓷
-  \bookpart {
-    \header {
-      my_subsubtitle  = "Gamme des ♯ avec ⓵⓶⓷"
-      \include  "../../all/header_all.ily"
-    }
-    \score {
-      \new Staff {
-        \new Voice {
-          \clef "treble"
-          \staff_diese
-        }
-        \addlyrics {
-          \override LyricText.font-size = #-1
-          \lyric_doigte_num
+          \lyric
         }
         \addlyrics {
           \override LyricText.font-size = #-3
-          \lyric_diese
+          \lyric_doigte
         }
       }
     }

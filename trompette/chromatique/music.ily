@@ -1,0 +1,25 @@
+\version  "2.19.83"
+do1 | dod
+| re
+| red
+| mi
+| fa
+| fad
+| sol
+| sold
+| la
+| lad
+| si
+| do
+| si
+| sib
+| la
+| lab
+| sol
+| solb
+| fa
+| mi
+| mib
+| re
+| reb
+| do
