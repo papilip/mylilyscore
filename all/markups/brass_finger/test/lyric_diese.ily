@@ -1,0 +1,31 @@
+\version  "2.19.83"
+\markup { fa♯   \brass_finger ,fad }  \markup { sol \brass_finger ,sol }
+\markup { sol♯  \brass_finger ,sold }
+\markup { la    \brass_finger ,la }
+\markup { la♯   \brass_finger ,lad }
+\markup { si    \brass_finger ,si }
+\markup { do    \brass_finger do }
+\markup { do♯   \brass_finger dod }
+\markup { re    \brass_finger re }
+\markup { re♯   \brass_finger red }
+\markup { mi    \brass_finger mi }
+\markup { fa    \brass_finger fa }
+\markup { fa♯   \brass_finger fad }
+\markup { sol   \brass_finger sol }
+\markup { sol♯  \brass_finger sold }
+\markup { la    \brass_finger la }
+\markup { la♯   \brass_finger lad }
+\markup { si    \brass_finger si }
+\markup { do    \brass_finger do' }
+\markup { do♯   \brass_finger dod' }
+\markup { re    \brass_finger re' }
+\markup { re♯   \brass_finger red' }
+\markup { mi    \brass_finger mi' }
+\markup { fa    \brass_finger fa' }
+\markup { fa♯   \brass_finger fad' }
+\markup { sol   \brass_finger sol' }
+\markup { sol♯  \brass_finger sold' }
+\markup { la    \brass_finger la' }
+\markup { la♯   \brass_finger lad' }
+\markup { si    \brass_finger si' }
+\markup { do    \brass_finger do'' }
