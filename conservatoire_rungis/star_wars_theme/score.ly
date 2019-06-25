@@ -5,7 +5,7 @@
 my_dedication   = ""
 my_title        = ""
 my_subtitle     = "Star Wars"
-my_subsubtitle  = "Arrangé par notre professeur"
+my_subsubtitle  = "Thème"
 my_instrument   = ""
 
 % Les champs suivants sont alignés sur le bord gauche
