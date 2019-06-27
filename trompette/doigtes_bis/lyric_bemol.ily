@@ -1,31 +1,31 @@
 \version  "2.19.83"
-sol♭ sol
-la♭
-la
-si♭
-si
-do
-re♭
-re
-mi♭
-mi
-fa
-sol♭
-sol
-la♭
-la
-si♭
-si
-do
-re♭
-re
-mi♭
-mi
-fa
-sol♭
-sol
-la♭
-la
-si♭
-si
-do
+\markup { sol♭  \brass_finger ,solb } \markup { sol \brass_finger ,sol }
+\markup { la♭   \brass_finger ,lab }
+\markup { la    \brass_finger ,la }
+\markup { si♭   \brass_finger ,sib }
+\markup { si    \brass_finger ,si }
+\markup { do    \brass_finger do }
+\markup { re♭   \brass_finger reb }
+\markup { re    \brass_finger re }
+\markup { mi♭   \brass_finger mib }
+\markup { mi    \brass_finger mi }
+\markup { fa    \brass_finger fa }
+\markup { sol♭  \brass_finger solb }
+\markup { sol   \brass_finger sol }
+\markup { la♭   \brass_finger lab }
+\markup { la    \brass_finger la }
+\markup { si♭   \brass_finger sib }
+\markup { si    \brass_finger si }
+\markup { do    \brass_finger do' }
+\markup { re♭   \brass_finger reb' }
+\markup { re    \brass_finger re' }
+\markup { mi♭   \brass_finger mib' }
+\markup { mi    \brass_finger mi' }
+\markup { fa    \brass_finger fa' }
+\markup { sol♭  \brass_finger solb' }
+\markup { sol   \brass_finger sol' }
+\markup { la♭   \brass_finger lab' }
+\markup { la    \brass_finger la' }
+\markup { si♭   \brass_finger sib' }
+\markup { si    \brass_finger si' }
+\markup { do    \brass_finger do'' }

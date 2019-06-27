@@ -1,0 +1,31 @@
+\version  "2.19.83"
+sol♭ sol
+la♭
+la
+si♭
+si
+do
+re♭
+re
+mi♭
+mi
+fa
+sol♭
+sol
+la♭
+la
+si♭
+si
+do
+re♭
+re
+mi♭
+mi
+fa
+sol♭
+sol
+la♭
+la
+si♭
+si
+do

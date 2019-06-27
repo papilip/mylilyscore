@@ -18,12 +18,12 @@ my_composer     = ""
 my_arranger     = ""
 
 #(set-global-staff-size 35)
+\include "../../all/markups/brass_finger/brass_finger.ily"
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LA MUSIQUE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-lyric_doigte_num  = \lyricmode { \include "lyric_doigte_num.ily" }
 lyric_bemol       = \lyricmode { \include "lyric_bemol.ily" }
 lyric_diese       = \lyricmode { \include "lyric_diese.ily" }
 
@@ -51,7 +51,7 @@ staff_diese = \relative do {
     tagline           = ##f
     oddHeaderMarkup   = \markup \null
     evenHeaderMarkup  = \markup \null
-    oddFooterMarkup   = \include  "../../all/tagline_double.ily"
+    oddFooterMarkup   = \include  "../../all/taglines/tagline_double.ily"
     evenFooterMarkup  = \oddFooterMarkup
   }
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -59,7 +59,7 @@ staff_diese = \relative do {
   \bookpart {
     \header {
       my_subsubtitle  = "Gamme des ♭ avec ⓵⓶⓷"
-      \include  "../../all/header_all.ily"
+      \include  "../../all/headers/header_all.ily"
     }
     \score {
       \new Staff {
@@ -71,10 +71,6 @@ staff_diese = \relative do {
           %{ \override LyricText.font-size = #-3 %}
           \lyric_bemol
         }
-        \addlyrics {
-          \override LyricText.font-size = #-3
-          \lyric_doigte_num
-        }
       }
     }
   }
@@ -83,7 +79,7 @@ staff_diese = \relative do {
   \bookpart {
     \header {
       my_subsubtitle  = "Gamme des ♯ avec ⓵⓶⓷"
-      \include  "../../all/header_all.ily"
+      \include  "../../all/headers/header_all.ily"
     }
     \score {
       \new Staff {
@@ -92,11 +88,7 @@ staff_diese = \relative do {
           \staff_diese
         }
         \addlyrics {
-          \override LyricText.font-size = #-1
-          \lyric_doigte_num
-        }
-        \addlyrics {
-          \override LyricText.font-size = #-3
+          %{ \override LyricText.font-size = #-3 %}
           \lyric_diese
         }
       }

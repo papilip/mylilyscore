@@ -1,11 +1,11 @@
 \version  "2.19.83"
-\language "italiano"
+\language "français"
 #(ly:set-option 'relative-includes #t)
 
 % Les champs suivants sont centrés
 my_dedication   = ""
 my_title        = ""
-my_subtitle     = "Doigté de la trompette"
+my_subtitle     = "Doigtés de la trompette"
 my_subsubtitle  = ""
 my_instrument   = ""
 
@@ -18,15 +18,16 @@ my_composer     = ""
 my_arranger     = ""
 
 #(set-global-staff-size 36)
+\include "../../all/markups/brass_finger/brass_finger.ily"
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LA MUSIQUE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-lyric_doigte_nb   = \lyricmode { \include "lyric_doigte_nb.ily" }
-lyric_doigte_num  = \lyricmode { \include "lyric_doigte_num.ily" }
 lyric_bemol       = \lyricmode { \include "lyric_bemol.ily" }
+lyric_bemol_horiz = \lyricmode { \include "lyric_bemol_horiz.ily" }
 lyric_diese       = \lyricmode { \include "lyric_diese.ily" }
+lyric_diese_horiz = \lyricmode { \include "lyric_diese_horiz.ily" }
 
 staff_bemol = \relative do' {
   % Augmentation de l’espace des mesures
@@ -43,7 +44,7 @@ staff_diese = \relative do {
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% LA PARTITION des #
+% LA PARTITION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \book {
   \paper {
@@ -52,62 +53,15 @@ staff_diese = \relative do {
     tagline           = ##f
     oddHeaderMarkup   = \markup \null
     evenHeaderMarkup  = \markup \null
-    oddFooterMarkup   = \include  "../../all/tagline_double.ily"
+    oddFooterMarkup   = \include  "../../all/taglines/tagline_double.ily"
     evenFooterMarkup  = \oddFooterMarkup
   }
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  %%% Page 1 ♭ avec ●●●
+  %%% Page 1 ♭ avec doigté seul
   \bookpart {
     \header {
-      my_subsubtitle  = "Gamme des ♭ avec ●●●"
-      \include  "../../all/header_all.ily"
-    }
-    % \markup { \vspace #1 }
-    \score {
-      \new Staff {
-        \new Voice {
-          \clef "treble"
-          \staff_bemol
-        }
-        \addlyrics {
-          \lyric_doigte_nb
-        }
-        \addlyrics {
-          \override LyricText.font-size = #-3
-          \lyric_bemol
-        }
-      }
-    }
-  }
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  %%% Page 2 ♯ avec ●●●
-  \bookpart {
-    \header {
-      my_subsubtitle  = "Gamme des ♯ avec ●●●"
-      \include  "../../all/header_all.ily"
-    }
-    \score {
-      \new Staff {
-        \new Voice {
-          \clef "treble"
-          \staff_diese
-        }
-        \addlyrics {
-          \lyric_doigte_nb
-        }
-        \addlyrics {
-          \override LyricText.font-size = #-3
-          \lyric_diese
-        }
-      }
-    }
-  }
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  %%% Page 3 ♭ avec ⓵⓶⓷
-  \bookpart {
-    \header {
-      my_subsubtitle  = "Gamme des ♭ avec ⓵⓶⓷"
-      \include  "../../all/header_all.ily"
+      my_subsubtitle  = "Gamme des ♭ avec le doigté seul"
+      \include  "../../all/headers/header_all.ily"
     }
     \score {
       \new Staff {
@@ -116,22 +70,18 @@ staff_diese = \relative do {
           \staff_bemol
         }
         \addlyrics {
-          \override LyricText.font-size = #-1
-          \lyric_doigte_num
-        }
-        \addlyrics {
-          \override LyricText.font-size = #-3
-          \lyric_bemol
+          %{ \override LyricText.font-size = #-3 %}
+          \lyric_bemol_horiz
         }
       }
     }
   }
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  %%% Page 2 ♯ avec ⓵⓶⓷
+  %%% Page 2 ♯ avec doigté seul
   \bookpart {
     \header {
-      my_subsubtitle  = "Gamme des ♯ avec ⓵⓶⓷"
-      \include  "../../all/header_all.ily"
+      my_subsubtitle  = "Gamme des ♯  avec le doigté seul"
+      \include  "../../all/headers/header_all.ily"
     }
     \score {
       \new Staff {
@@ -140,11 +90,55 @@ staff_diese = \relative do {
           \staff_diese
         }
         \addlyrics {
-          \override LyricText.font-size = #-1
-          \lyric_doigte_num
+          %{ \override LyricText.font-size = #-3 %}
+          \lyric_diese_horiz
+        }
+      }
+    }
+  }
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%% Page 3 ♭ avec doigté et nom des notes
+  \bookpart {
+    \header {
+      my_subsubtitle  = "Gamme des ♭ avec le doigté et le nom des notes"
+      \include  "../../all/headers/header_all.ily"
+    }
+    \score {
+      \new Staff {
+        \new Voice {
+          \clef "treble"
+          \staff_bemol
         }
         \addlyrics {
-          \override LyricText.font-size = #-3
+          %{ \override LyricText.font-size = #-3 %}
+          \lyric_bemol_horiz
+        }
+        \addlyrics {
+          \override LyricText.font-size = #-1
+          \lyric_bemol
+        }
+      }
+    }
+  }
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%% Page 4 ♯ avec doigté et nom des notes
+  \bookpart {
+    \header {
+      my_subsubtitle  = "Gamme des ♯ avec le doigté et le nom des notes"
+      \include  "../../all/headers/header_all.ily"
+    }
+    \score {
+      \new Staff {
+        \new Voice {
+          \clef "treble"
+          \staff_diese
+        }
+        \addlyrics {
+          %{ \override LyricText.font-size = #-3 %}
+          \lyric_diese_horiz
+        }
+        \addlyrics {
+          \override LyricText.font-size = #-1
           \lyric_diese
         }
       }

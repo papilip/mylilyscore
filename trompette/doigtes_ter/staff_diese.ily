@@ -1,0 +1,31 @@
+\version  "2.19.83"
+fad1 | sol
+sold
+la
+lad
+si
+do
+dod
+re
+red
+mi
+fa
+fad
+sol
+sold
+la
+lad
+si
+do
+dod
+re
+red
+mi
+fa
+fad
+sol
+sold
+la
+lad
+si
+do
