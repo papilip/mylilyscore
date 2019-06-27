@@ -25,7 +25,9 @@ my_arranger     = ""
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 lyric_doigte_num  = \lyricmode { \include "lyric_doigte_num.ily" }
 lyric_bemol       = \lyricmode { \include "lyric_bemol.ily" }
+lyric_bemol_horiz = \lyricmode { \include "lyric_bemol_horiz.ily" }
 lyric_diese       = \lyricmode { \include "lyric_diese.ily" }
+lyric_diese_horiz = \lyricmode { \include "lyric_diese_horiz.ily" }
 
 staff_bemol = \relative do' {
   % Augmentation de l’espace des mesures
@@ -55,10 +57,10 @@ staff_diese = \relative do {
     evenFooterMarkup  = \oddFooterMarkup
   }
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  %%% Page 1 ♭ avec ⓵⓶⓷
+  %%% Page 1 ♭
   \bookpart {
     \header {
-      my_subsubtitle  = "Gamme des ♭ avec ⓵⓶⓷"
+      my_subsubtitle  = "Gamme des ♭"
       \include  "../../../headers/header_all.ily"
     }
     \score {
@@ -72,17 +74,20 @@ staff_diese = \relative do {
           \lyric_bemol
         }
         \addlyrics {
-          \override LyricText.font-size = #-3
+          \override LyricText.font-size = #-2
           \lyric_doigte_num
+        }
+        \addlyrics {
+          \lyric_bemol_horiz
         }
       }
     }
   }
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  %%% Page 2 ♯ avec ⓵⓶⓷
+  %%% Page 2 ♯
   \bookpart {
     \header {
-      my_subsubtitle  = "Gamme des ♯ avec ⓵⓶⓷"
+      my_subsubtitle  = "Gamme des ♯"
       \include  "../../../headers/header_all.ily"
     }
     \score {
@@ -96,8 +101,11 @@ staff_diese = \relative do {
           \lyric_diese
         }
         \addlyrics {
-          \override LyricText.font-size = #-3
+          \override LyricText.font-size = #-2
           \lyric_doigte_num
+        }
+        \addlyrics {
+          \lyric_diese_horiz
         }
       }
     }

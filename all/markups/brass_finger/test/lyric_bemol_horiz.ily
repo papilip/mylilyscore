@@ -1,0 +1,31 @@
+\version  "2.19.83"
+\markup \brass_fingerh ,solb  \markup \brass_fingerh ,sol 
+\markup \brass_fingerh ,lab
+\markup \brass_fingerh ,la
+\markup \brass_fingerh ,sib
+\markup \brass_fingerh ,si
+\markup \brass_fingerh do
+\markup \brass_fingerh reb
+\markup \brass_fingerh re
+\markup \brass_fingerh mib
+\markup \brass_fingerh mi
+\markup \brass_fingerh fa
+\markup \brass_fingerh solb
+\markup \brass_fingerh sol
+\markup \brass_fingerh lab
+\markup \brass_fingerh la
+\markup \brass_fingerh sib
+\markup \brass_fingerh si
+\markup \brass_fingerh do'
+\markup \brass_fingerh reb'
+\markup \brass_fingerh re'
+\markup \brass_fingerh mib'
+\markup \brass_fingerh mi'
+\markup \brass_fingerh fa'
+\markup \brass_fingerh solb'
+\markup \brass_fingerh sol'
+\markup \brass_fingerh lab'
+\markup \brass_fingerh la'
+\markup \brass_fingerh sib'
+\markup \brass_fingerh si'
+\markup \brass_fingerh do''

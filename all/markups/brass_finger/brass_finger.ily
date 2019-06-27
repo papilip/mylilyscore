@@ -47,6 +47,11 @@
   (hash-set! fingerings "si'"   '(#f #t #f))
   (hash-set! fingerings "do''"  '(#f #f #f))
 
+
+  ;;;===================================================================================================================
+  ;;;   \markup \brass_finger note
+  ;;;   Affiche le doigté verticale de la trompette (ou instrument en cuivre)
+  ;;;===================================================================================================================
   (define-markup-command (brass_finger layout props note) (markup?)
     #:properties (
       (radius     0.7)
@@ -59,16 +64,49 @@
     (interpret-markup layout props
       (markup
         #:line
-        (#:override
-          (cons (quote baseline-skip) skip)
-          (#:column
-            (#:draw-circle radius thickness (list-ref (hash-get-handle fingerings note) 1)
-             #:draw-circle radius thickness (list-ref (hash-get-handle fingerings note) 2)
-             #:draw-circle radius thickness (list-ref (hash-get-handle fingerings note) 3)
+        (#:raise 2.3
+          (#:override
+            (cons (quote baseline-skip) skip)
+            (#:column
+              (#:draw-circle radius thickness (list-ref (hash-get-handle fingerings note) 1)
+               #:draw-circle radius thickness (list-ref (hash-get-handle fingerings note) 2)
+               #:draw-circle radius thickness (list-ref (hash-get-handle fingerings note) 3)
+              )
             )
           )
         )
       )
     )
   )
+
+
+  ;;;===================================================================================================================
+  ;;;   \markup \brass_fingerh note
+  ;;;   Affiche le doigté horizontal de la trompette (ou instrument en cuivre)
+  ;;;===================================================================================================================
+  (define-markup-command (brass_fingerh layout props note) (markup?)
+    #:properties (
+      (radius     0.7)
+      (thickness  0.1)
+      (vspace     1.0)
+    )
+
+    "Affiche le doité horizontal pour une tompette en fonction de la note donnée"
+
+    (interpret-markup layout props
+      (markup
+        #:line
+        (#:concat
+          (#:raise vspace
+            (#:draw-circle radius thickness (list-ref (hash-get-handle fingerings note) 1))
+          #:raise vspace
+            (#:draw-circle radius thickness (list-ref (hash-get-handle fingerings note) 2))
+          #:raise vspace
+            (#:draw-circle radius thickness (list-ref (hash-get-handle fingerings note) 3))
+          )
+        )
+      )
+    )
+  )
+
 )
