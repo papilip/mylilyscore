@@ -1,7 +1,8 @@
+\version "2.22.2"
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Nous compressons les mesures vides et voulons une barre horizontale
-\compressFullBarRests
+% \compressFullBarRests
 \override MultiMeasureRest.expand-limit 	= #3
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
